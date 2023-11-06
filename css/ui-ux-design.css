@@ -1,0 +1,112 @@
+/* case study */
+.ui-ux-design {
+   background-color: rgb(0, 0, 0);
+   position: relative;
+   z-index: 3;
+   padding: 3rem 0rem;
+   display: flex;
+   display: flex;
+   margin-bottom: -2px;
+}
+
+.ui-ux-design .padding {
+    flex: 1;
+}
+
+.ui-ux-design .content-div {
+    flex: 10;
+}
+
+.center {
+    text-align: center;
+}
+
+.ui-ux-design .content-div > p{
+    color: #fff;
+    font-family: 'Metropolis-Light';
+    line-height: 1.5rem;
+}
+
+.ui-ux-design .content-div > p.strong{
+    font-family: 'Metropolis-Bold';
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.ui-ux-design.white {
+    background-color: #fff;
+}
+
+.ui-ux-design .content-div .ux-design {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ui-ux-design .content-div .ux-design .descriptoin {
+    flex: 1 0 15rem;
+    padding: 2rem;
+    font-family: 'Metropolis-Light';
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.ui-ux-design .content-div .ux-design .descriptoin.wide {
+    flex: 1 0 100%;
+    padding: 2rem 0;
+}
+
+.ui-ux-design .content-div .ux-design .descriptoin h2{
+    margin: 1rem 0;
+    font-family: 'Metropolis-Bold';
+    line-height: 2rem;
+}
+
+.ui-ux-design .content-div .ux-design .descriptoin h1{
+    font-family: 'Metropolis-Bold';
+    font-size: 1.5rem;
+}
+
+.ui-ux-design .content-div .ux-design .descriptoin h1 strong{
+    color: #2B47F0;
+}
+
+
+.ui-ux-design .content-div .ux-design .descriptoin ul{
+    list-style: none;
+    list-style-position: inside;
+    list-style-image: url(https://res.cloudinary.com/dkp6pws4e/image/upload/v1666766798/uiux/right-arrow_guyjwl.webp);
+    padding: 0;
+    line-height: 2rem;
+    font-family: 'Metropolis-Light';
+}
+
+
+@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+    .ui-ux-design .content-div .ux-design .descriptoin h1 strong{ 
+        background-image: linear-gradient(to right, #2B47F0, #DD4FE9);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+}
+
+/* 990px and below */
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 672px) {
+    
+    .ui-ux-design .content-div > p.strong{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .ui-ux-design .content-div .project .background {
+        margin: -1rem;
+    }
+
+}

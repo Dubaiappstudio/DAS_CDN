@@ -1,0 +1,484 @@
+/* case study */
+
+#scroll{
+    background: white;
+}
+hr {
+    flex: 1 0 61%;
+    margin: 5vh 4vw 0 4vw;
+    color: #dedede;
+}
+.mobile-platform {
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    padding: 2vw;
+}
+
+.mobile-platform .padding{
+    flex: 1;
+}
+
+.mobile-platform .platform{
+    overflow: hidden;
+    flex: 6;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile-platform .platform .ios,.mobile-platform .platform .android,.mobile-platform .platform .hybrid {
+    margin: 0px -2px -2px 0;
+    padding: 1.5rem;
+    padding-bottom: 5rem;
+    flex: 1 0 25%;
+    text-align: center;
+    font-family: 'Metropolis-Bold';
+    border-right: 1px solid #dedede ;
+    border-bottom: 1px solid #dedede ;
+    text-decoration: none;
+    color: #000;
+}
+
+.mobile-platform .platform .ios img,.mobile-platform .platform .android img,.mobile-platform .platform .hybrid img{
+    width: 50%;
+    height: auto;
+}
+
+.mobile-platform .platform .ios h2,.mobile-platform .platform .android h2,.mobile-platform .platform .hybrid h2{
+    line-height: 2rem;
+    font-size: 2rem;
+    white-space: nowrap;
+    color: white;
+}
+
+.mobile-platform .platform .ios span,.mobile-platform .platform .android span,.mobile-platform .platform .hybrid span{
+    color: #000;
+    white-space: nowrap;
+    font-family: 'Metropolis-Light';
+    font-size: 1rem;
+    margin-top: 2vw;
+    margin-bottom: 2rem;
+    padding: 0.4vw;
+    text-decoration: none;;
+    border-bottom: 1px white solid;
+    letter-spacing: 0.2rem;
+    color: white;
+}
+.padding {
+    flex: 1;
+}
+.flex-box{
+    flex: 10;
+}
+#card-1{
+    background-image: url('/images/mobile_dev_header.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+#card-1 h1{
+    margin-top: 20rem;
+    font-size: 3em;
+    width: 80%;
+}
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 2;
+    cursor: pointer;
+  }
+#card-4{
+    background-color: white;
+    background-image: none;
+    color: black;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+#card-4 .choose-us{
+    background-color: white;
+    padding: 0;
+}
+#card-4 .choose-us p{
+    color:black
+}
+#card-4 .item{
+    border-radius: 25px;
+    margin: 25px;
+    padding: 25px;
+    width: 35%;
+    border: 2px solid transparent;
+    background: linear-gradient(to right, white, white), linear-gradient(to right, #2B47F0, #DD4FE9);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    position: relative;
+    z-index: 5;
+}
+#card-4 .item span{
+    font-family: 'Metropolis-Light';
+    background-image: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+#card-4 #context{
+    border: none;
+    position: relative;
+    top: -35px;
+    background: none;
+}
+#card-4 .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cms .team .card-content{
+    background-color: white;
+    color: black;
+    padding: 3rem 5rem;
+    position: relative;
+    z-index: 10;
+}
+.cms .team .card-content h3{
+    font-size: 2em;
+    font-family: 'Metropolis-Bold';
+    line-height: 1.3em;
+}
+.cms .team .card-content p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: 'Metropolis-Light';
+}
+.cms{
+    background: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    color: #fff;
+    position: relative;
+    padding: 5rem 0;
+    display: flex;
+}
+
+.cms .team span{
+    font-family: 'Metropolis-Light';
+    font-size: 1.3rem;
+    line-height: 2rem;
+    position: relative;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-50%,0%);
+    display: inline-block;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.cms .team h1, .cms .team h2{
+    font-family: 'Metropolis-Bold';
+    font-size: 3rem;
+    line-height: 4rem;
+    position: relative;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-50%,0%);
+    display: inline-block;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.cms .team img{
+    width: 80%;
+    height: auto;
+    position: relative;
+    z-index: 4;
+    margin: auto;
+    display: block;
+    margin-bottom: -9rem;
+}
+
+.cms .team .icon {
+    width: 60px;
+    height: 65px;
+    position: relative;
+    z-index: 4;
+    margin: auto;
+    display: block;
+    margin-bottom: 35px;
+    background-image: url('/images/shopify_icon.svg');
+}
+
+.choose-us{
+    background-color: #181818;
+    padding: 5rem;
+    padding-top: 8rem;
+}
+.choose-us .row .item p{
+    font-family: 'Metropolis-Light';
+    line-height: 2rem;
+    color: white;
+}
+.choose-us .row .item span{
+    font-family: 'Metropolis-Bold';
+}
+
+.for-you{
+    background-color: #fff;
+    font-family: 'Metropolis-Light';
+    overflow: hidden;
+    margin: 8rem 0;
+    display: flex;
+}
+.for-you .row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.for-you .item-1{
+    /*width: 15%;*/
+    line-height: 2.5rem;
+    font-family: 'Metropolis-Bold';
+    font-size: 22px;
+}
+.for-you .item-2{
+    width: 60%;
+}
+.for-you ul li{
+    padding-left: 8px;
+}
+.for-you h2{
+    width: 65%;
+    line-height: 2rem;
+    font-family: 'Metropolis-Light';
+    padding: 0;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.for-you ul{
+    list-style: none;
+    list-style-image: url(../images/bullet_point.webp);
+    width: 65%;
+    line-height: 2rem;
+    font-family: 'Metropolis-Light';
+    padding: 0;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.for-you ul li {
+    margin-top: 2rem;
+    position: relative;
+    z-index: 4;
+    font-size: 1.2rem;
+}
+
+.buy-shop{
+    display: flex;
+    background: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    align-items: center;
+    color: #fff;
+    position: relative;
+    padding: 3rem 0;
+}
+
+.buy-shop .shop{
+    display: flex;
+    width: 100%;
+}
+
+.buy-shop svg.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.buy-shop svg.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.buy-shop .shop p{
+    flex: 4;
+    font-family: 'Metropolis-Light';
+    font-size: 1rem;
+    line-height: 2rem;
+    position: relative;
+    z-index: 4;
+}
+
+.buy-shop .shop p span{
+    font-size: 1.3rem;
+
+}
+
+.buy-shop .shop p span a{
+    font-family: 'Metropolis-bold';
+    color: white;
+    text-decoration: none;}
+
+.buy-shop .shop img{
+    height: auto;
+    max-width: 50vw;
+    position: relative;
+    z-index: 4;
+    margin: auto;
+    margin-top: -7rem;
+}
+
+.buy-shop .stroke {
+    width: 80%;
+    position: absolute; 
+}
+.buy-shop .card{
+    width: 70%;
+    padding-left: 2rem;
+    line-height: 2em;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+.buy-shop .card p{
+    width: 80%
+}
+
+.buy-shop .card-image{
+    width: 30%;
+   
+}
+/* 990px and below */
+@media screen and (max-width: 1400px) {
+    .mobile-platform .platform .ios, .mobile-platform .platform .android, .mobile-platform .platform .hybrid{
+        padding: 1rem; 
+        padding-bottom: 3rem;
+    }
+    .mobile-platform .platform .ios h2,.mobile-platform .platform .android h2,.mobile-platform .platform .hybrid h2{
+        line-height: 2rem;
+        font-size: 1.7rem;
+        white-space: nowrap;
+    }
+
+    .mobile-platform .platform .ios span, .mobile-platform .platform .android span, .mobile-platform .platform .hybrid span{
+        font-size: 0.8rem;
+    }
+    #card-4{
+        margin-top: 12rem;
+    }
+    #card-1 h1{
+        margin-top: 8rem;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .get-quote,.lang{
+        display: block !important;
+    }
+    .con{
+        display: inline-block !important;
+    }
+    .navbar,.contact-btn{
+        display: none !important;
+    }
+    #card-4{
+        margin-top: 18rem;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    #card-1 h1{
+        font-size: 1.8em;
+    }
+    #card-1{
+        background-position: center center;
+        height: 35vh;
+    }
+    #card-4{
+        padding:0 ;
+    }
+    #card-4{
+        margin-top: 15rem;
+    }
+    #card-4 .row .item{
+        width: auto;
+        padding: 1.2rem;
+        font-size: 1.2em;
+    }
+    #card-4 #context{
+        padding: 0;
+    }
+    .cms .team .card-content{
+        padding: 1rem 3rem;
+    }
+    .cms .team .card-content h2{
+        font-size: 1.5em;
+    }
+    .cms .team .card-content p{
+        font-size: unset;
+    }
+    .for-you .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .for-you .row .item-1 img{
+        display: none;
+    } 
+    .for-you .row .item-1{
+        width: 60%;
+    }
+    .for-you .item-2{
+        width: auto;
+    }
+    .buy-shop .shop{
+        flex-wrap: wrap;
+    }
+    .buy-shop .shop img{
+        width: 20rem;
+    }
+    .buy-shop .shop{
+        justify-content: center;
+    }
+    .buy-shop .card, .buy-shop .card-image{
+        width:auto;
+    }
+    .buy-shop .card{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .for-you{
+        padding-top: 9rem;
+    }
+    .buy-shop{
+        padding: 3rem 3rem;
+    }
+    .buy-shop{
+        flex-direction: column;
+    }
+
+    .buy-shop .content{
+        margin-top: 0;
+    }
+    #card-1 h1{
+        margin-top: 4rem;
+    }
+    #card-4{
+        margin-top: 18rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    .mobile-platform .platform .ios h2, .android h2, .hybrid h2{
+        font-size: 1rem;
+    }
+    #card-1 h1{
+        margin-top: 0;
+    }
+    #card-4{
+        margin-top: 24rem;
+    }
+}

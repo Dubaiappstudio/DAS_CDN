@@ -1,0 +1,179 @@
+/* case study */
+.branding {
+   margin: 7vw 0;
+}
+
+
+
+.branding .menu {
+    display: none;
+    position: relative;
+    top: 0;
+    width: 50vw;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.branding .menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 2vw;
+}
+
+.branding .menu li {
+    display: inline;
+    margin: 0 2vw;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    font-family: 'Metropolis-Bold';
+}
+
+@media screen and (max-width: 800px) {
+    .branding .menu {
+        width: 90vw;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .branding .menu ul{
+        overflow: scroll;
+    }
+
+    .branding .menu li {
+        font-size: min(max(1rem,calc(1rem + 0.01vw)),1.75rem);
+        margin: 0 5.5vw;
+    }
+
+}
+
+.branding .menu li.active {
+    display: list-item;
+    list-style-image: url(../images/list-style.webp);
+}
+
+.branding .our-branding {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3vw;
+    padding: 0 5vw;
+    background-color: #fff;
+    z-index: 2;
+    position: relative;
+    justify-content: space-around;
+}
+
+.branding h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Metropolis-Bold';
+}
+
+.branding .our-branding .branding{
+    flex: 1 0 24%;
+    min-width: 30vh;
+    max-width: 70vh;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+
+.branding .our-branding .branding > img{
+    width: 100%;
+    height: auto;
+}
+
+.branding .our-branding .branding > div {
+    position: absolute;
+    background: #000;
+    color: #fff;
+    bottom: 10%;
+    left: 10%;
+    width: 40%;
+    height: 24%;
+    padding: 5%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Metropolis-Bold';
+}
+
+.branding .our-branding .branding > div > img {
+    width: 50%;
+    height: auto;
+}
+
+.branding .our-branding .branding > div > h3 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+
+
+.branding .view-all{
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+    margin-top: 4vw;
+    border: 1px white solid;
+    padding: 1.5rem 3rem;
+    border-radius: 50vw;
+    margin-bottom: 10vh;
+
+}
+
+ .branding .view-all a{
+    text-align: center;
+
+    color: white;
+    white-space: nowrap;
+    font-family: 'Metropolis-Light ';
+    font-weight: lighter;
+    text-align: center;
+    font-size: min(max(0.7rem,calc(0.7rem + 0.01vw)),1.75rem);
+    display: inline-block;
+    text-decoration: none;;
+    letter-spacing: min(max(0.2rem,calc(0.2rem + 0.01vw)),1.75rem);
+}
+
+
+
+    /* 990px and below */
+@media screen and (max-width: 990px) {
+}
+
+
+@media screen and (max-width: 672px) {
+    .branding{
+        margin-top: 10vh;
+    }
+
+    .branding .view-all{
+        padding: 1rem 2rem;
+    }
+
+    .branding .our-branding .branding{
+        margin: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .branding .our-branding .branding > div > img {
+        width: 70%;
+        height: auto;
+    }
+    .branding .our-branding .branding > div > h3 {
+        font-size: 0.7rem;
+    }
+}

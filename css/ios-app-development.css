@@ -1,0 +1,115 @@
+/* case study */
+.ios-app-development {
+   background-color: #fff;
+   position: relative;
+   z-index: 3;
+   padding: 6rem 0rem;
+   display: flex;
+   display: flex;
+   margin-bottom: -2px;
+}
+
+.ios-app-development .padding {
+    flex: 1;
+}
+
+.ios-app-development .about-service{
+    flex: 10;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ios-app-development .about-service{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ios-app-development .about-service .title {
+    flex: 1 0 38%;
+    min-width: 31vmax;
+    margin-top: 2rem;
+    padding-right: 1vw;
+}
+
+.ios-app-development .about-service .title img{
+    display: block;
+    width: 70%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.ios-app-development .about-service .description {
+    flex: 1 0 60%;
+    min-width: 31vmax;
+}
+.ios-app-development .about-service .description h1{
+    font-family: 'Metropolis-Bold';
+}
+
+.ios-app-development .about-service .description p{
+    font-family: 'Metropolis-Light';
+    line-height: 1.7rem;
+    line-height: 2rem;
+    margin: 0px;
+}
+
+.ios-app-development .about-service .description .comparison{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ios-app-development .about-service .description .comparison div {
+    flex: 1 0 25vh;
+    font-family: 'Metropolis-Bold';
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.ios-app-development .about-service .description .comparison div h2{
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.ios-app-development .about-service .description .comparison div ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* 990px and below */
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 874px) {
+    .ios-app-development {
+        padding: 0 0 2rem 0;
+     }
+}
+
+@media screen and (max-width: 672px) {
+    .ios-app-development .about-service .description p{
+        line-height: 1.3rem; 
+        white-space: normal;
+    }
+
+    .ios-app-development .about-service .description .comparison div h2{
+        line-height: 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    .ios-app-development .about-service .description .comparison div ul{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .ios-app-development .about-service .title h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        word-wrap: break-word;
+    }
+
+    
+}

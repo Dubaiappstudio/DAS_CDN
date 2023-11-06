@@ -1,0 +1,166 @@
+/* case study */
+.mobile-app-development {
+   background-color: #fff;
+   position: relative;
+   z-index: 3;
+   padding: 6rem 0rem;
+   display: flex;
+   display: flex;
+   margin-bottom: -2px;
+}
+
+.mobile-app-development .padding {
+    flex: 1;
+}
+
+.mobile-app-development .about-service{
+    flex: 10;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile-app-development .about-service{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile-app-development .about-service .title {
+    flex: 1 0 38%;
+    min-width: 31vmax;
+    margin-top: 2rem;
+    padding-right: 1vw;
+}
+
+.mobile-app-development .about-service .title span{
+    display: inline-block;
+    font-family:'Metropolis-Light';
+    font-size: 1rem;
+    color: #2B47F0;
+}
+
+.mobile-app-development .about-service .title h1{
+    display: block;
+    font-family: 'Metropolis-Bold';
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.mobile-app-development .about-service .description {
+    flex: 1 0 60%;
+    min-width: 31vmax;
+}
+
+.mobile-app-development .about-service .description p{
+    font-family: 'Metropolis-Light';
+    line-height: 1.7rem;
+}
+
+.mobile-app-development .about-service .description p strong{
+    font-family: 'Metropolis-Bold';
+}
+
+.mobile-platform {
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    padding: 2vw;
+}
+
+.mobile-platform .padding{
+    flex: 1;
+}
+
+.mobile-platform .platform{
+    overflow: hidden;
+    flex: 6;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile-platform .platform .ios,.mobile-platform .platform .android,.mobile-platform .platform .hybrid {
+    margin: 0px -2px -2px 0;
+    padding: 1.5rem;
+    padding-bottom: 5rem;
+    flex: 1 0 25%;
+    text-align: center;
+    font-family: 'Metropolis-Bold';
+    border-right: 1px solid #dedede ;
+    border-bottom: 1px solid #dedede ;
+    text-decoration: none;
+    color: #000;
+}
+
+.mobile-platform .platform .ios img,.mobile-platform .platform .android img,.mobile-platform .platform .hybrid img{
+    width: 50%;
+    height: auto;
+}
+
+.mobile-platform .platform .ios h2,.mobile-platform .platform .android h2,.mobile-platform .platform .hybrid h2{
+    line-height: 2rem;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+.mobile-platform .platform .ios span,.mobile-platform .platform .android span,.mobile-platform .platform .hybrid span{
+    color: #000;
+    white-space: nowrap;
+    font-family: 'Metropolis-Light';
+    font-size: 1rem;
+    margin-top: 2vw;
+    margin-bottom: 2rem;
+    padding: 0.4vw;
+    text-decoration: none;;
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    letter-spacing: 0.2rem;
+}
+
+
+@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+    .mobile-app-development .about-service .title span{ 
+        background-image: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+}
+
+/* 990px and below */ 
+@media screen and (max-width: 1347px) {
+    .mobile-platform .platform .ios, .mobile-platform .platform .android, .mobile-platform .platform .hybrid{
+        padding: 1rem; 
+        padding-bottom: 3rem;
+    }
+    .mobile-platform .platform .ios h2,.mobile-platform .platform .android h2,.mobile-platform .platform .hybrid h2{
+        line-height: 2rem;
+        font-size: 1.7rem;
+        white-space: nowrap;
+    }
+
+    .mobile-platform .platform .ios span, .mobile-platform .platform .android span, .mobile-platform .platform .hybrid span{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 672px) {
+  
+}
+
+@media screen and (max-width: 300px) {
+    .mobile-app-development .about-service .title h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        word-wrap: break-word;
+    }
+
+    .mobile-platform .platform .ios h2, .android h2, .hybrid h2{
+        font-size: 1rem;
+    }
+
+    .mobile-app-development .about-service .description p{
+        line-height: 1rem; 
+        white-space: normal;
+    }
+}

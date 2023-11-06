@@ -1,0 +1,259 @@
+/* case study */
+.ui-ux-design {
+   background-color: rgb(0, 0, 0);
+   position: relative;
+   z-index: 3;
+   padding: 3rem 0rem;
+   display: flex;
+   display: flex;
+   margin-bottom: -2px;
+}
+
+.ui-ux-design.second{
+    padding-bottom: 10rem;
+}
+
+.ui-ux-design.development-process-background{
+    background-image: url(https://res.cloudinary.com/dkp6pws4e/image/upload/v1666766822/uiux/development-process_rd7hzg.webp);
+    background-size: cover;
+    padding: 8vmin;
+}
+
+.ui-ux-design .padding {
+    flex: 1;
+}
+
+.ui-ux-design .content-div {
+    flex: 10;
+}
+
+.center {
+    text-align: center;
+}
+
+.ui-ux-design .content-div > p,
+.ui-ux-design .content-div > h1{
+    color: #fff;
+    font-family: 'Metropolis-Light';
+    line-height: 1.5rem;
+}
+
+.ui-ux-design .content-div > p.strong{
+    font-family: 'Metropolis-Bold';
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.ui-ux-design .content-div .projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,25rem);
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2vmax;
+}
+
+.ui-ux-design .content-div .projects .project{
+    flex: 1;
+    font-family: 'METROPOLIS-Light';
+    color: #fff;
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 100vw;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(to right, #2B47F0, #DD4FE9);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    margin: 1rem 1rem;
+    padding: 1.5rem 1.5rem;
+}
+
+.ui-ux-design .content-div .projects .project h2{
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+
+.ui-ux-design .content-div .about-service {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ui-ux-design .content-div .about-service .left{
+    flex: 1 0 50%;
+    background-color: black;
+    min-width: 40vmin
+}
+
+.ui-ux-design .content-div .about-service .left div {
+    padding: 2rem;
+    font-family: 'Metropolis-Light';
+}
+
+.ui-ux-design .content-div .about-service .left div span{
+    color: #fff;
+}
+
+.ui-ux-design .content-div .about-service .left div h2{
+    color: #fff;
+    font-family: 'Metropolis-Bold';
+    font-size: 2rem;
+}
+
+.ui-ux-design .content-div .about-service .left div p{
+    color: #fff;
+    line-height: 2rem;
+}
+
+.ui-ux-design .content-div .about-service .left img{
+    width: 100%;
+    height: auto;
+}
+
+.ui-ux-design .content-div .about-service .right{
+    flex: 1 0 50%;
+}
+
+.ui-ux-design.white {
+    background-color: #fff;
+}
+
+/* .ui-ux-design .content-div .ux-design {
+    display: flex;
+    flex-wrap: wrap;
+} */
+/* 
+.ui-ux-design .content-div .ux-design .descriptoin {
+    flex: 1 0 15rem;
+    padding: 2rem;
+    font-family: 'Metropolis-Light';
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.ui-ux-design .content-div .ux-design .descriptoin.wide {
+    flex: 1 0 100%;
+    padding: 2rem 0;
+}
+
+.ui-ux-design .content-div .ux-design .descriptoin h2{
+    margin: 1rem 0;
+    font-family: 'Metropolis-Bold';
+    line-height: 2rem;
+}
+
+.ui-ux-design .content-div .ux-design .descriptoin span{
+    font-family: 'Metropolis-Bold';
+} */
+
+/* .ui-ux-design .content-div .ux-design .descriptoin span strong{
+    color: #2B47F0;
+}
+
+
+.ui-ux-design .content-div .ux-design .descriptoin ul{
+    list-style: none;
+    list-style-position: inside;
+    list-style-image: url(https://res.cloudinary.com/dkp6pws4e/image/upload/v1666766798/uiux/right-arrow_guyjwl.webp);
+    padding: 0;
+    line-height: 2rem;
+    font-family: 'Metropolis-Light';
+} */
+
+
+.read-more{
+    position: relative;
+    font-size: 0.8rem;
+    z-index: 3;
+}
+.read-more a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    padding: 1em 4em 1em 1em;
+    font-family: 'Metropolis-Light';
+    letter-spacing: 0.2em;
+}
+.read-more .text{
+    position: relative;
+    z-index: 5;
+}
+.read-more .circul{
+    background: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    padding: 1.5em 1.5em;    
+    border-radius: 50vw;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0em;
+    width: 0%;  
+    transition: width 0.5s ease-in-out;
+}
+.read-more .arrow{
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0.8em;
+}
+.read-more a:hover .circul{
+    width: 80%;    
+}
+
+
+@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+    .ui-ux-design .content-div .projects .project a{ 
+        background-image: linear-gradient(to right, #2B47F0, #DD4FE9);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+
+    /* .ui-ux-design .content-div .ux-design .descriptoin span strong{ 
+        background-image: linear-gradient(to right, #2B47F0, #DD4FE9);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    } */
+}
+
+/* 990px and below */
+@media screen and (max-width: 990px) {
+    .ui-ux-design .content-div .projects .project{
+        flex: 1 0 25vw;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    
+    .ui-ux-design .content-div > p.strong{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .ui-ux-design .content-div .projects .project{
+        flex: 1 0 40vw;
+    }
+
+    .ui-ux-design .content-div .projects .project p {
+        font-size: 0.8rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 300px) {
+    
+    .ui-ux-design .content-div .projects .project{
+        flex: 1 0 60vw;
+        padding: 1rem;
+    }
+
+    .ui-ux-design .content-div .project .background {
+        margin: -1rem;
+    }
+
+}

@@ -1,0 +1,235 @@
+/* case study */
+.web-development {
+   background-color: #fff;
+   position: relative;
+   z-index: 3;
+   padding: 6rem 0rem;
+   display: flex;
+   margin-bottom: -2px;
+}
+
+.web-development .padding {
+    flex: 1;
+}
+
+.web-development .content {
+    flex: 10;
+}
+
+.web-development .content .about-service{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.web-development .content .about-service .title {
+    flex: 1 0 40%;
+    min-width: 31vmax;
+    margin-top: 2rem;
+}
+
+.web-development .content .about-service .title span{
+    display: inline;
+    margin-bottom: 1rem;
+    font-family:'Metropolis-Light';
+    font-size: 1rem;
+}
+
+.web-development .content .about-service .title h1{
+    padding: 0 3vw 0 0px;
+    display: block;
+    font-family: 'Metropolis-Bold';
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: left;
+}
+
+.web-development .content .about-service .description {
+    flex: 1 0 60%;
+    min-width: 31vmax;
+}
+.web-development .content .about-service .description h1{
+    font-family: 'Metropolis-Bold';
+}
+
+.web-development .content .about-service .description p{
+    font-family: 'Metropolis-Light';
+    line-height: 1.7rem;
+    line-height: 2rem;
+    margin: 0px;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.web-development .content > p{
+    font-family: 'Metropolis-Light';
+    line-height: 1.5rem;
+}
+
+.web-development .content > p.strong{
+    font-family: 'Metropolis-Bold';
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.web-development .content .techs {
+    margin-top: 10vmax;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.web-development .content .techs .tech-logo{
+    flex: 1 0 8vmax;
+    padding-top: 2vmax;
+}
+
+.web-development .content .techs .tech-logo img{ 
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.web-development .content .projects {
+    margin-top: 10vmax;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 2vmax;
+
+}
+
+.web-development .content .projects .project{
+    flex: 1 0 15vw;
+    text-align: center;
+    
+    border: 2px solid transparent;
+    border-radius: 100vw;
+    background: 
+      linear-gradient(to right, white, white), 
+      linear-gradient(to right, #2B47F0, #DD4FE9);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  
+    margin: 1rem 1rem;
+    padding: 1rem 0;
+}
+
+.web-development .content .projects .project p{ 
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin: 0px;
+    white-space: nowrap;
+    font-family: 'Metropolis-Light';
+}
+
+.web-development .content .tech-descriptions{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20vh;
+    font-family: 'Metropolis-Light';
+}
+
+
+.web-development .content .tech-descriptions .tech-description{
+    flex: 1 0 41%;
+    text-align: center;
+    padding: 3rem 0;
+    line-height: 1.5rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.web-development .content .tech-descriptions .tech-description img{
+    height: 100%;
+    width: auto;
+    max-height: 25vh;
+}
+
+.web-development .content .tech-descriptions .tech-description h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Metropolis-Bold';
+}
+
+.web-development .content .tech-descriptions .tech-description p{
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding: 0 3rem;
+}
+
+.web-development .content .tech-descriptions .tech-description span{
+    color: #000;
+    white-space: nowrap;
+    font-family: 'Metropolis-Light';
+    font-size: 1rem;
+    padding: 0.2vw;
+    text-decoration: none;;
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    letter-spacing: 0.2rem;
+}
+
+@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+    .web-development .content .about-service .title span{ 
+        background-image: linear-gradient(to right, #2B47F0, #DD4FE9);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+}
+
+
+/* 990px and below */
+@media screen and (max-width: 990px) {
+    .web-development .content .projects .project{
+        flex: 1 0 25vw;
+    }
+}
+
+@media screen and (max-width: 672px) {
+
+    .web-development .content .about-service .description p{
+        line-height: 1.5rem; 
+        white-space: normal;
+    }
+    
+    .web-development .content > p.strong{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .web-development .content .projects .project{
+        flex: 1 0 40vw;
+    }
+
+    .web-development .content .projects .project p {
+        font-size: 0.8rem;
+    }
+
+    .web-development .content .techs .tech-logo img{
+        width: 90%; 
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    
+    .web-development .content .about-service .title h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        word-wrap: break-word;
+    }
+
+    .web-development .content .projects .project{
+        flex: 1 0 60vw;
+    }
+
+
+}

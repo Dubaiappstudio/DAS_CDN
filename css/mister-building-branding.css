@@ -1,0 +1,244 @@
+/* case study */
+.branding {
+   margin: 7vw 0;
+   background-color: #fff;
+   position: relative;
+   z-index: 2;
+   font-family: 'Metropolis-Light';
+}
+
+.branding .misterbuilding-branding{
+    text-align: center;
+}
+
+.branding .misterbuilding-branding img{
+    margin: 5vh 0;
+    width: 90%;
+    height: auto;
+}
+
+.branding .misterbuilding-branding p{
+    width: 70%;
+    margin: auto;
+    line-height: 1.6rem;
+}
+
+
+
+.branding .menu {
+    position: relative;
+    top: 0;
+    width: 50vw;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.branding .menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 2vw;
+}
+
+.branding .menu li {
+    display: inline;
+    margin: 0 2vw;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    font-family: 'Metropolis-Bold';
+}
+
+.branding .our-branding.margin{
+    margin: 5rem 0;
+}
+
+.branding .our-branding {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5vw;
+    background-color: #fff;
+    z-index: 2;
+    position: relative;
+    justify-content: space-around;
+}
+
+.branding .our-branding .brand{
+    flex: 1 0 47%;
+    min-width: 30vh;
+    max-width: 70vh;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.branding .our-branding .brand.color-palette{
+    text-align: left;
+}
+
+.branding .our-branding .brand.color-palette .palette{
+    display: flex;
+    height: 15%;
+    margin: 2vh 0;
+}
+
+.branding .our-branding .brand.color-palette .palette div:nth-child(1){
+    flex: 1;
+    background-color: #E73737;
+}
+.branding .our-branding .brand.color-palette .palette div:nth-child(2){
+    flex: 1;
+    background-color: #F5979E;
+}
+.branding .our-branding .brand.color-palette .palette div:nth-child(3){
+    flex: 1;
+    background-color: #2E3E5B;
+}
+.branding .our-branding .brand.color-palette .palette div:nth-child(4){
+    flex: 1;
+    background-color: #96DAF7;
+}
+
+.branding .our-branding .brand.color-palette .alph{
+    margin-top: 2vh;
+    display: flex;
+}
+
+.branding .our-branding .brand.color-palette .alph > p{
+    flex: 1;
+    font-family: 'Metropolis-bold';
+    font-size: 4rem;
+    margin: 2rem 0px;
+    margin-right: 1rem;
+}
+
+.branding .our-branding .brand.color-palette .alph > div {
+    flex: 3;
+}
+
+.branding .our-branding .brand.color-palette .alph > div p:nth-child(1){
+    font-family: 'Metropolis-bold';
+}
+
+.branding .our-branding .brand table {
+    border-collapse: collapse;
+}
+
+.branding .our-branding .brand table td {
+    padding-bottom: 1vh;
+    line-height: 1.5rem;
+}
+
+.branding .our-branding .brand table td {
+    padding-bottom: 2vh;
+}
+
+.branding .our-branding .brand table tr td {
+    text-align: justify;
+}
+
+.branding .our-branding .brand table tr td:nth-child(2) {
+    padding-left: 2vh;
+}
+
+.branding .our-branding .brand table tr:nth-child(1) td:nth-child(2) {
+    font-family: 'Metropolis-Bold';
+    font-size: 1.2rem;
+}
+
+.branding .our-branding .brand table tr:nth-child(2) td:nth-child(2) {
+    font-family: 'Metropolis-Medium';
+}
+
+.branding .our-branding .brand table tr td:nth-child(2) {
+    padding-left: 2vh;
+}
+
+.branding .our-branding .brand table tr td button {
+    color: white;
+    background-color: #2E3E5B;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+
+.branding .our-branding .brand table tr td a {
+    margin: 0 1rem;
+    color: black;
+    letter-spacing: 0.1rem;
+}
+
+.branding .our-branding .brand.mascots {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.branding .our-branding .brand.mascots h2 {
+    font-family: 'Metropolis-Bold';
+}
+
+.branding .our-branding .brand.mascots p {
+    line-height: 1.5rem;
+}
+
+.branding .our-branding .brand img {
+    width: 100%;
+    height: auto;
+}
+
+
+.black, .black .our-branding{
+    background-color: #181818;
+    padding-top: 5vh;
+    color: #fff;
+    font-family: 'Metropolis-Bold';
+    text-align: center;
+}
+
+
+.black p{
+    font-family: 'Metropolis-Light';
+    width: 70%;
+    margin: auto;
+    padding: 5vh 0;
+    line-height: 1.6rem;
+}
+
+.black .our-branding .brand{
+    padding: 0;
+}
+
+.black.single-image .our-branding .brand{
+    flex: 1 0 100%;
+    max-width: initial;
+    margin-bottom: 3vh;
+}
+
+    /* 990px and below */
+@media screen and (max-width: 990px) {
+}
+
+
+@media screen and (max-width: 672px) {
+    .branding{
+        margin-top: 8vh;
+    }
+
+    .branding .view-all{
+        padding: 1rem 2rem;
+    }
+
+    .branding .our-branding .branding{
+        margin: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+}

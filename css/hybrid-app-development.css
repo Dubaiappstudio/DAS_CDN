@@ -1,0 +1,123 @@
+/* case study */
+.hybrid-app-development {
+   background-color: #fff;
+   position: relative;
+   z-index: 3;
+   padding: 6rem 0rem;
+   display: flex;
+   display: flex;
+   margin-bottom: -2px;
+}
+
+.hybrid-app-development .padding {
+    flex: 1;
+}
+
+.hybrid-app-development .about-service{
+    flex: 10;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hybrid-app-development .about-service{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hybrid-app-development .about-service .title {
+    flex: 1 0 38%;
+    min-width: 31vmax;
+    margin-top: 2rem;
+    padding-right: 1vw;
+}
+
+.hybrid-app-development .about-service .title img{
+    display: block;
+    width: 70%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.hybrid-app-development .about-service .description {
+    flex: 1 0 60%;
+    min-width: 31vmax;
+}
+.hybrid-app-development .about-service .description h1{
+    font-family: 'Metropolis-Bold';
+}
+
+.hybrid-app-development .about-service .description p{
+    font-family: 'Metropolis-Light';
+    line-height: 1.7rem;
+    line-height: 2rem;
+    /* margin: 0px; */
+}
+.hybrid-app-development .about-service .description .strong{
+    font-family: 'Metropolis-Bold';
+    margin: 2rem 0rem;
+}
+
+.hybrid-app-development .about-service .description .comparison{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hybrid-app-development .about-service .description .comparison div {
+    flex: 1 0 25vh;
+    font-family: 'Metropolis-Bold';
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.hybrid-app-development .about-service .description .comparison div h2{
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.hybrid-app-development .about-service .description .comparison div ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* 990px and below */
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 874px) {
+    .hybrid-app-development {
+        padding: 0 0 2rem 0;
+     }
+}
+
+@media screen and (max-width: 672px) {
+    .hybrid-app-development .about-service .description p{
+        font-size: 1rem; 
+        line-height: 1.3rem;
+        white-space: normal;
+    }
+
+    .hybrid-app-development .about-service .description .comparison div h2{
+        line-height: 1.2rem;
+        font-size: 1.3rem;
+    }
+
+    .hybrid-app-development .about-service .description .comparison div ul{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .hybrid-app-development .about-service .title h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        word-wrap: break-word;
+    }
+
+    .hybrid-app-development .about-service .description p{
+        line-height: 1.3rem; 
+        white-space: normal;
+    }
+}

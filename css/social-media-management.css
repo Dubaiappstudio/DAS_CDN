@@ -1,0 +1,324 @@
+.social-media-section {
+   background-color: rgba(255, 255, 255);
+   position: relative;
+   z-index: 3;
+   padding: 6rem 0rem;
+   display: flex;
+   display: flex;
+   margin-bottom: -2px;
+}
+
+.social-media-section .padding {
+    flex: 1;
+}
+
+.social-media-section .why-social-media{
+    flex: 10;
+    text-align: center;
+}
+
+.social-media-section .why-social-media .description {
+    min-width: 31vmax;
+}
+
+.social-media-section .why-social-media .description h1{
+    font-family: 'Metropolis-Bold';
+    margin-top: 0;
+}
+
+.social-media-section .why-social-media .description p{
+    font-family: 'Metropolis-Light';
+    line-height: 1.7rem;
+    line-height: 2rem;
+    margin: 0px;
+    margin-top: 2rem;
+}
+
+.social-media-section .why-social-media .social-media-service{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5vw;
+    position: relative;
+    max-width: 1072px;
+    margin: auto;
+}
+
+.social-media-section .why-social-media .social-media-service .social-img-service{
+    flex: 1 0 25vh;
+    width: 20vw;
+    height: auto;
+    margin: 0.7vw;
+}
+
+.social-media-section .why-social-media .social-media-service a{
+    flex: 1 0 25vh;
+    width: 20vw;
+    margin: 0.7vw;
+    position: relative;
+    cursor: pointer;
+}
+.social-media-section .why-social-media .social-media-service a img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.social-media-section .why-social-media .social-media-service a img:nth-child(1){
+    opacity: 1;
+    position: relative;
+}
+.social-media-section .why-social-media .social-media-service a img:nth-child(2){
+    opacity: 0;
+}
+
+.social-media-section .why-social-media .social-media-service a:hover img:nth-child(1){
+    opacity: 0;
+}
+.social-media-section .why-social-media .social-media-service a:hover img:nth-child(2){
+    opacity: 1;
+}
+
+.social-media-section .why-social-media .mobile-screen{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5vw;
+    position: relative;
+}
+
+.social-media-section .why-social-media .mobile-screen .mobile-screen-img{
+    flex: 1 0 20vh;
+    width: 15vw;
+    height: auto;
+}
+
+.social-media-section .why-social-media > img{
+    margin-top: 8vh;
+    width: 80%;
+    height: auto;
+}
+
+.who-we-served{
+    background-color: #000;
+    position: relative;
+    z-index: 2;
+    padding-top: 5vmax;
+    padding-bottom: 10vmax;
+    overflow: hidden;
+}
+
+.who-we-served > img{
+    position: absolute;
+    height: 30vmax;
+    width: auto;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+.who-we-served > p {
+    color: white;
+    position: absolute;
+    font-family: 'Metropolis-Bold';
+    font-size: 3vmax;
+    transform: rotate(-90deg) translate(50%,0vw);
+}
+.who-we-served  .carousel{
+    width: 100vmax;
+    left: 40vw;
+}
+
+.who-we-served .carousel .slick-next{
+    right: initial !important;
+    top: 108.7% !important;
+    background: linear-gradient(55.38deg, #2B47F0 17.6%, #DD4FE9 75.36%) !important;
+    width: 6% !important;
+    height: 17% !important;
+}
+
+.who-we-served .carousel .slick-next::before{
+    font-size: 3vw;
+}
+
+.who-we-served .carousel .slick-prev{
+    display: none !important;
+}
+
+.who-we-served .carousel .slick-slide{
+    height: initial;
+    margin: 0 0.4rem 0 0;
+}
+
+.who-we-served  .carousel .carousel-item > img {
+    width: 100%;
+    height: auto;
+}
+
+.social-media-section .social-media-report {
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-media-section .social-media-report .description{
+    flex: 2 0 50%;
+    font-family: 'Metropolis-Light';
+}
+
+.social-media-section .social-media-report .description h2{
+    font-family: 'Metropolis-Bold';
+}
+
+.social-media-section .social-media-report .description p{
+    line-height: 1.5rem;
+}
+
+.social-media-section .social-media-report .description img{
+    width: 80%;
+    height: auto;
+    margin-top: 5vh;
+}
+
+.social-media-section .social-media-report .image {
+    flex: 1 0 30%;
+}
+
+.social-media-section .social-media-report .image img {
+    width: auto;
+    height: 40vh;
+    float: right;
+}
+
+.who-getting-us{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.who-getting-us .image{
+    flex: 1 0 20%;
+}
+
+.who-getting-us .image img{
+    width: 30vw;
+    height: auto;
+}
+
+.who-getting-us .description{
+    flex: 1 0 60%;
+    padding: 5vw;
+}
+.who-getting-us .description > div{
+    position: relative;
+    display: block;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.who-getting-us .description h2{
+    margin-top: 0;
+    font-family: 'Metropolis-Light';
+}
+
+.who-getting-us .description img{
+    max-width: 60vw;
+    height: auto;
+    width: auto;
+}
+
+
+.social-media .performance{
+    background-color: #fff;
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Metropolis-Light';
+    position: relative;
+    z-index: 4;
+    padding: 1rem 10rem;
+}
+
+.social-media .performance .title{
+    flex:1;
+    padding: 1vw;
+    font-family: 'Metropolis-Light';
+    margin: 1rem 2rem;
+    white-space: nowrap;
+}
+
+.social-media .performance .title span{
+    color: #2B47F0;
+}
+
+.social-media .performance .text {
+    flex: 1 0 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+    .social-media .performance .title span{
+        background-image: linear-gradient(to right, #2B47F0, #DD4FE9);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+}
+
+/* 990px and below */
+@media screen and (max-width: 990px) {
+    .social-media-section .why-social-media .mobile-screen .mobile-screen-img{
+        flex: 1 0 30vh;
+        width: 28vw;
+        height: auto;
+    }
+
+    .social-media .performance{
+        padding: 1rem 5rem;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .social-media-section .social-media-report .description{
+        text-align: center;
+    }
+    .social-media-section .social-media-report .description img{
+        width: 80%;
+        height: auto;
+        margin-top: 3vh;
+    }
+
+    .social-media-section .social-media-report .image{
+        flex:1 0 100%;
+        text-align: center;
+    }
+    .social-media-section .social-media-report .image img {
+        height: 30vh;
+        width: auto;
+        margin-top: 4vh;
+        /* position: relative;
+        left: 50%;
+        transform: translate(-50%,0); */
+        float: initial;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .social-media-section .why-social-media .title h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        word-wrap: break-word;
+    }
+
+    .social-media-section .why-social-media .description p{
+        line-height: 1rem; 
+        white-space: normal;
+    }
+}

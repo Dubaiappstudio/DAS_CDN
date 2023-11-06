@@ -1,0 +1,545 @@
+/* case study */
+html,body{
+    /* height:100%; */
+    /* background-color: white ; */
+  }
+
+#scroll{
+    background: white;
+}
+hr {
+    flex: 1 0 61%;
+    margin: 5vh 4vw 0 4vw;
+    color: #dedede;
+}
+.padding {
+    flex: 1;
+}
+.flex-box{
+    flex: 10;
+}
+.ios-development{
+    display: flex;
+    padding: 5rem 0;
+}
+.ios-development .content-body{
+    flex:10;
+}
+.ios-development .content-body p{
+    line-height: 2em;
+    width: 80%;
+    font-family: 'Metropolis-Light';
+}
+.ios-development #title{
+    padding-left: 18px;
+}
+.ios-development .features{
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.ios-development .features h3{
+    font-family: 'Metropolis-Light';
+    background-image: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.ios-development .flex-header{
+    display: flex;
+    font-family: 'Metropolis-Bold';
+    align-items: center;
+    flex-wrap: wrap;
+}
+.features ul{
+    line-height: 2em;
+    list-style: none;
+    font-family: 'Metropolis-Light';
+}
+.features .right-section{
+    margin-right: 8rem;
+}
+#card-1{
+    background-image: url('/images/andriod_header.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+#card-1 h1{
+    margin-top: 20rem;
+    width: 80%;
+    font-size: 3em;
+}
+#card-1 img{
+    margin: unset;
+    width: unset;
+    height: unset;
+    position: static;
+    z-index: 4;
+    display: inline;
+    margin-bottom: 0rem;
+}
+#card-1 .card-content .card-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 2;
+    cursor: pointer;
+  }
+#card-2{
+    background-color: white;
+    background-image: none;
+    color: black;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+
+}
+#card-2 .choose-us{
+    background-color: white;
+    padding: 0;
+}
+#card-2 .choose-us p{
+    color:black
+}
+#card-2 .item{
+    box-shadow: 0 4px 8px 0 #ededed, 0 6px 20px 0 #EDEDED;
+    margin: 25px;
+    padding: 25px;
+    width: 35%;
+    position: relative;
+    z-index: 5;
+}
+#card-2 .row .item p{
+    font-family: 'Metropolis-Light';
+    line-height: 2rem;
+    color: black;
+}
+#card-2 .row .item span{
+    font-family: 'Metropolis-Bold';
+    margin-right: 0.5rem;
+}
+#card-2 .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#card-2 .item:after{
+    display: block;
+    content: '';
+    border-bottom: solid 5px transparent;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, white, white), linear-gradient(to right, #2B47F0, #DD4FE9);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+#card-2 .item:hover:after{
+    transform: scaleX(1);
+}
+#card-2 .item:after{
+    transform-origin:0% 50%;
+}
+
+#card-2 .item:hover span{
+    background-image: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+#card-3 h2 ,
+#card-3 span{
+    text-align: left ;
+    left: 0;
+    transform: unset;
+}
+#card-3 .row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    right: 10%;
+}
+#card-3 .row .item{
+    width: 35%;
+    padding: 50px 0;
+    font-size: 18px;
+    z-index: 5;
+    position: relative;
+}
+#card-3 .row .item p{
+    font-family: 'Metropolis-Light';
+    line-height: 2rem;
+    color: white;
+}
+#card-3 .row .item span{
+    font-family: 'Metropolis-Bold';
+    margin-bottom: 18px;
+    display: block;
+}
+#card-3 .row .last{
+    width: 50% !important;
+}
+
+.cms .team .card-content{
+    background-color: white;
+    color: black;
+    padding: 3rem 5rem;
+    position: relative;
+    z-index: 5;
+}
+.cms .team .card-content h3{
+    font-size: 2em;
+    font-family: 'Metropolis-Bold';
+    line-height: 1.3em;
+}
+.cms .team .card-content p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: 'Metropolis-Light';
+}
+.cms{
+    background: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    color: #fff;
+    position: relative;
+    padding: 5rem 0;
+    display: flex;
+}
+
+.cms .team span{
+    font-family: 'Metropolis-Light';
+    font-size: 1.3rem;
+    line-height: 2rem;
+    position: relative;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-50%,0%);
+    display: inline-block;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.cms .team h1, .cms .team h2{
+    font-family: 'Metropolis-Bold';
+    font-size: 3rem;
+    line-height: 4rem;
+    position: relative;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-50%,0%);
+    display: inline-block;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.cms .team img{
+    width: 80%;
+    height: auto;
+    position: relative;
+    z-index: 4;
+    margin: auto;
+    display: block;
+    margin-bottom: -9rem;
+}
+
+.cms .team .icon {
+    width: 60px;
+    height: 65px;
+    position: relative;
+    z-index: 4;
+    margin: auto;
+    display: block;
+    margin-bottom: 35px;
+    background-image: url('/images/shopify_icon.svg');
+}
+
+.choose-us{
+    background-color: #181818;
+    padding: 5rem;
+    padding-top: 8rem;
+}
+.choose-us .row{
+    display: flex;
+    justify-content: center;
+}
+.choose-us .row .item{
+    width: 25%;
+    padding: 50px;
+    font-size: 18px;
+}
+.choose-us .row .item p{
+    font-family: 'Metropolis-Light';
+    line-height: 2rem;
+    color: white;
+}
+.choose-us .row .item span{
+    font-family: 'Metropolis-Bold';
+}
+
+.for-you{
+    background-color: #fff;
+    font-family: 'Metropolis-Light';
+    overflow: hidden;
+    /* padding-top: 7rem; */
+}
+.for-you .row{
+    display: flex;
+    justify-content: center;
+}
+.for-you .item-1{
+    width: 15%;
+    line-height: 2.5rem;
+    font-family: 'Metropolis-Bold';
+    font-size: 22px;
+}
+.for-you .item-2{
+    width: 60%;
+}
+.for-you ul li{
+    padding-left: 8px;
+}
+
+
+.for-you ul{
+    list-style: none;
+    list-style-image: url(../images/right-arrow.webp);
+    width: 65%;
+    line-height: 2rem;
+    font-family: 'Metropolis-Light';
+    padding: 0;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.for-you ul li {
+    margin-top: 2rem;
+    position: relative;
+    z-index: 4;
+    font-size: 1.2rem;
+}
+
+.buy-shop{
+    display: flex;
+    background: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    align-items: center;
+    color: #fff;
+    position: relative;
+    padding: 3rem 0;
+}
+
+.buy-shop .shop{
+    display: flex;
+    width: 100%;
+}
+
+.buy-shop svg.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.buy-shop svg.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.buy-shop .shop p{
+    flex: 4;
+    font-family: 'Metropolis-Light';
+    font-size: 1rem;
+    line-height: 2rem;
+    position: relative;
+    z-index: 4;
+    /* margin: 2rem 2rem; */
+}
+
+.buy-shop .shop p span{
+    font-size: 1.3rem;
+
+}
+
+.buy-shop .shop p span a{
+    font-family: 'Metropolis-bold';
+    color: white;
+    text-decoration: none;}
+
+.buy-shop .shop img{
+    height: auto;
+    max-width: 50vw;
+    position: relative;
+    z-index: 4;
+    margin: auto;
+    margin-top: -7rem;
+}
+
+.buy-shop .stroke {
+    width: 80%;
+    position: absolute;
+}
+.buy-shop .card{
+    width: 70%;
+    padding-left: 8rem;
+    line-height: 2em;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+.buy-shop .card p{
+    width: 80%
+}
+
+.buy-shop .card-image{
+    width: 30%;
+
+}
+
+/* 990px and below */
+@media screen and (max-width: 1375px) {
+    #card-2{
+        margin-top: 12rem;
+    }
+    #card-1 h1{
+        margin-top: 8rem;
+        width: auto;
+    }
+    .buy-shop .card{
+        padding-left: 8rem;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .get-quote,.lang{
+        display: block !important;
+    }
+    .con{
+        display: inline-block !important;
+    }
+    .navbar,.contact-btn{
+        display: none !important;
+    }
+    #card-2{
+        margin-top: 18rem;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    #card-1 .card-content .card-header{
+        flex-direction: column-reverse;
+    }
+    .ios-development .flex-header{
+        justify-content: center;
+    }
+    #card-1{
+        background-position: center center;
+        height: 35vh;
+    }
+    #card-1 h1{
+        font-size: 1.8em;
+    }
+    #card-2 .team h2 ,#card-3 .team h2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    #card-2 ,#card-3{
+        padding:0 ;
+    }
+    #card-2{
+        margin-top: 10rem;
+    }
+    #card-2 .row .item{
+        width: auto;
+        padding: 16px 35px;
+        font-size: 1em;
+    }
+    #card-3 .row{
+        justify-content: normal;
+        right: unset;
+    }
+    #card-3{
+        padding: 5rem 0 ;
+    }
+    #card-3 .row .item{
+        width: auto;
+        padding: 16px 0;
+        font-size: 1em;
+    }
+    .cms .team .card-content{
+        padding: 1rem 3rem;
+    }
+    .cms .team .card-content h3{
+        font-size: 1.5em;
+    }
+    .cms .team .card-content p{
+        font-size: unset;
+    }
+    .buy-shop .shop{
+        flex-wrap: wrap;
+    }
+    .buy-shop .shop img{
+        width: 20rem;
+    }
+    .buy-shop .shop{
+        justify-content: center;
+    }
+    .buy-shop .card, .buy-shop .card-image{
+        width:auto;
+    }
+    .buy-shop .card{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    #card-1 h1{
+        margin-top: 2rem;
+    }
+    #card-3 .team span{
+        font-size: 1rem;
+    }
+    #card-2{
+        margin-top: 18rem;
+    }
+
+    .cms .team img{
+        margin-bottom: -9rem;
+    }
+
+    .for-you{
+        padding-top: 9rem;
+    }
+    .buy-shop{
+        padding: 3rem 3rem;
+    }
+    .buy-shop{
+        flex-direction: column;
+    }
+
+    .buy-shop .content{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #card-2{
+        margin-top: 30rem;
+    }
+}

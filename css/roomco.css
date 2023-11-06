@@ -1,0 +1,607 @@
+@font-face {
+    font-family: "Metropolis-Bold";
+    src: url(../fonts/metropolis/Metropolis-Bold.otf);
+    font-display: swap;
+}
+@font-face {
+    font-family: "Metropolis-Light";
+    src: url(../fonts/metropolis/Metropolis-Light.otf);
+    font-display: swap;
+}
+
+html {
+    font-size: 16px;
+}
+
+body{
+    background-color: #222;
+    margin: 0;
+    font-family: 'Metropolis-Light';
+    padding: 0 4vw;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a{
+    color: #fff;
+}
+
+h2{
+    font-size: 7rem;
+    font-family: 'Metropolis-Bold';
+    line-height: 7rem;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+h2 span{
+    color: #222;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+h3{
+    font-size: 4rem;
+    font-family: 'Metropolis-Bold';
+    line-height: 4rem;
+}
+
+h4{
+    font-size: 2rem;
+    font-family: 'Metropolis-Bold';
+    line-height: 2rem;
+}
+
+ul li {
+    margin-top: 5vh;
+}
+
+ol li {
+    margin-top: 3vh;
+}
+
+li::marker {
+    color: #16ADF4;
+}
+
+.cover {
+    width: 100vw;
+    position: relative;
+    left: -4vw;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.min-width{
+    min-width: 30vh
+}
+
+.vertical-center{
+    position: relative;
+    top: 50%;
+    transform: translate(0 ,-50%);
+}
+
+.flex > div{
+    flex: 1;
+}
+
+.flex > div > .text {
+    top: 50%;
+    position: relative;
+    transform: translate(0, -50%);
+}
+
+.download {
+    position: absolute;
+    top: 40vw;
+    left:13vw;
+    width: 30vw;
+}
+
+.download > div > div {
+    padding-right: 0.5vw;
+    margin-top: 0.5vh;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.block{
+    display: block;
+}
+
+.margin-top-5 {
+    margin-top: 5vh;
+}
+.margin-top-10 {
+    margin-top: 10vh;
+}
+
+.fa-solid, .fas{
+    font-size: 5rem;
+    color: #16ADF4;
+}
+
+.processes{
+    width: 70%;
+    margin: 10vh auto;
+    font-family: 'Metropolis-light';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.processes .process{
+    display: inline-block;
+    border: solid 1px white;
+    border-radius: 1rem;
+    padding: 2vw;
+    font-size: 3rem;
+}
+
+.processes .process .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.processes .process .container .left{
+    flex: 1;
+}
+
+.processes .process .container .right{
+    flex: 1;
+}
+
+.processes .process .container span{
+    display: block;
+    margin: 1rem 0;
+    margin-left: 2.4rem;
+}
+
+.processes .process .container span.bold{
+    font-family: 'Metropolis-Bold';
+}
+
+.processes .process .container ul{
+    list-style: none;
+    font-size: 1.6rem;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.processes .process .container ul li{
+    margin-top: initial;
+    margin-bottom: 1vh;
+    line-height: 2rem;
+}
+
+
+.onbording {
+    margin: 15vh 0 5vh 0;
+    position: relative;
+}
+
+.onbording h2{
+    MARGIN: 0;
+    position: relative;
+    z-index: 3;
+    font-family: 'Metropolis-Bold';
+    font-size: 5rem;
+}
+
+.onbording .mask{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    font-family: 'Metropolis-Bold';
+    font-size: 14vw;
+    color: #222;
+    text-shadow: -1px -1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, 1px 1px 0 #666;
+}
+
+.branding {
+    margin: 15vh 0 5vh 0;
+    position: relative;
+}
+
+.branding h2{
+    MARGIN: 0;
+    position: relative;
+    z-index: 3;
+    font-family: 'Metropolis-Bold';
+    font-size: 5rem;
+}
+
+.branding .mask{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -5vw;
+    margin: 0;
+    transform: translate(0, -50%);
+    font-family: 'Metropolis-Bold';
+    font-size: 18vw;
+    color: #222;
+    text-shadow: -1px -1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, 1px 1px 0 #666;
+}
+
+.mobile-screen > div > div{
+    padding: 4vw;
+}
+
+.home .padding{
+    padding: 4vw;
+}
+
+
+.double-mobile > div {
+    padding: 0 15vw;
+}
+
+.double-mobile .padding{
+    padding: 0 5vw;
+}
+
+.blue-bg {
+    background-color: #4C7DFA;
+    position: relative;
+    width: 80vw;
+    left: -4vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5vh 10vw;
+    font-family: 'Metropolis-Bold';
+}
+
+.blue-bg .section{
+    flex: 1 0 40%;
+}
+
+.blue-bg .section p{
+    font-family: 'Metropolis-Light';
+}
+
+.blue-bg .section  p > span{
+    font-family: 'Metropolis-Bold';
+}
+
+.blue-bg .section img{
+    width: 80%;
+    height: auto;
+}
+
+.blue-bg .section > span{
+    font-size: 4rem;
+    display: inline-block;
+    margin-right: 3rem;
+    line-height: 2rem;
+}
+
+.blue-bg .section span small{
+    display: block;
+    font-size: 1rem;
+    white-space: nowrap;
+    font-family: 'Metropolis-Light';
+    margin: auto;
+    width: 50%;
+}
+
+
+.our-branding {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8vw;
+    padding: 0 5vw;
+    z-index: 2;
+    position: relative;
+    justify-content: space-around;
+}
+
+.our-branding .brand{
+    flex: 1 0 40%;
+    min-width: 30vh;
+    max-width: 70vh;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    padding: 1rem;
+}
+
+.our-branding .brand.color-palette{
+    text-align: left;
+}
+
+.our-branding .brand.color-palette .palette{
+    display: flex;
+    height: 15%;
+    margin: 2vh 0;
+}
+
+.our-branding .brand.color-palette .palette div:nth-child(1){
+    flex: 1;
+    background-color: #5089FA;
+}
+.our-branding .brand.color-palette .palette div:nth-child(2){
+    flex: 1;
+    background-color: #13DC9F;
+}
+.our-branding .brand.color-palette .palette div:nth-child(3){
+    flex: 1;
+    background-color: #000000;
+}
+.our-branding .brand.color-palette .palette div:nth-child(4){
+    flex: 1;
+    background-color: #EBEBEB;
+}
+
+.our-branding .brand.color-palette .alph{
+    margin-top: 2vh;
+    display: flex;
+}
+
+.our-branding .brand.color-palette .alph > p{
+    flex: 1;
+    font-family: 'Metropolis-bold';
+    font-size: 4rem;
+    margin: 2rem 0px;
+    margin-right: 1rem;
+}
+
+.our-branding .brand.color-palette .alph > div {
+    flex: 3;
+}
+
+.our-branding .brand.color-palette .alph > div p:nth-child(1){
+    font-family: 'Metropolis-bold';
+}
+
+.our-branding .brand table {
+    border-collapse: collapse;
+}
+
+.our-branding .brand table td {
+    padding-bottom: 1vh;
+    line-height: 1.5rem;
+}
+
+.our-branding .brand table td {
+    padding-bottom: 1vh;
+}
+
+.our-branding .brand table tr td:nth-child(2) {
+    padding-left: 2vh;
+}
+
+.our-branding .brand table tr td button {
+    color: white;
+    background-color: #5089FA;
+    border: none;
+    padding: 1rem;
+    border-radius: 100vw;
+}
+
+.our-branding .brand table tr td a {
+    margin: 0 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.our-branding .brand.mascots {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.our-branding .brand.mascots h2 {
+    font-family: 'Metropolis-Bold';
+}
+
+.our-branding .brand.mascots p {
+    line-height: 1.5rem;
+}
+
+.our-branding .brand img {
+    width: 100%;
+    height: auto;
+}
+
+
+.black, .black .our-branding{
+    background-color: #181818;
+    padding-top: 5vh;
+    color: #fff;
+    font-family: 'Metropolis-Bold';
+    text-align: center;
+}
+
+.black.no-padding{
+    padding-top: 0vh;
+}
+
+.black.no-padding .our-branding{
+    margin-top: 0;
+    padding-top: 2vh;
+}
+
+.black p{
+    font-family: 'Metropolis-Light';
+    width: 70%;
+    margin: auto;
+}
+
+.black .our-branding .brand{
+    padding: 0;
+}
+
+.black.single-image .our-branding .brand{
+    flex: 1 0 100%;
+    max-width: initial;
+    margin-bottom: 3vh;
+}
+
+.black.trible-image {
+    padding-bottom: 5vh;
+}
+
+.black.trible-image .our-branding .brand{
+    flex: 1 0 28%;
+    min-width: 30vh;
+    max-width: 70vh;
+    padding: 1vh;
+}
+
+.mockups{
+    margin-top: 20vh;
+}
+
+.mockups h2{
+    font-family: 'Metropolis-Bold';
+    font-size: 6vw;
+    text-align: center;
+}
+
+.mockups h2 span{
+    color: #222;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.mockups .grid{
+    columns: 3 25vh;
+}
+
+.mockups .grid div >div{
+   padding: 3vh 0;
+}
+
+.mockups .grid div img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 990px ){
+    body {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    h2{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .download {
+        top: 38vw;
+        left: 13vw;
+        width: 20vw;
+    }
+
+    .download > div {
+        flex-basis: 100%;
+    }
+
+       
+}
+
+@media screen and (max-width: 672px ){
+    html {
+        font-size: 12px;
+    }
+    h2{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .onbording h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .branding h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .our-branding {
+        font-size: 0.8rem;
+    }
+
+    .download {
+        top: 36vw;
+        left: 13vw;
+        width: 26vw;
+    }
+
+    .mobile-screen > div{
+        flex-basis: 100%;
+    }
+
+    .our-branding .branding{
+        margin: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 300px ){
+    html {
+        font-size: 10px;
+    }
+
+    h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .onbording h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .branding h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .our-branding {
+        font-size: 0.8rem;
+    }
+    .download {
+        position: relative;
+        top: 0;
+        left: 5%;
+        width: 90%;
+    }
+
+    .download > div {
+        flex-basis: 40%;
+    }
+
+    .blue-bg .section > span {
+        line-height: 3rem;
+    }
+}

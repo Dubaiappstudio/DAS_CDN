@@ -1,0 +1,178 @@
+/* case study */
+.case-study {
+   margin: 7vw 0;
+}
+
+.case-study > img{
+    position: relative;
+    z-index: 2;
+    width: max(min(50vh,90vw), 45vw);
+    left: 50%;
+    transform: translate(-50%,0);
+    display: none;
+}
+
+.case-study .menu {
+    position: relative;
+    top: 0;
+    width: 50vw;
+    height: auto;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
+.case-study .menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 2vw;
+}
+
+.case-study .menu li {
+    display: inline;
+    margin: 0 2vw;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    font-family: 'Metropolis-Bold';
+}
+
+@media screen and (max-width: 800px) {
+    .case-study .menu {
+        width: 90vw;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .case-study .menu ul{
+        overflow: scroll;
+    }
+
+    .case-study .menu li {
+        font-size: min(max(1rem,calc(1rem + 0.01vw)),1.75rem);
+        margin: 0 5.5vw;
+    }
+
+}
+
+.case-study .menu li {
+    cursor: pointer;
+}
+
+.case-study .menu li.active {
+    display: list-item;
+    list-style-image: url(../images/list-style.webp);
+}
+
+.case-study .our-work {
+    margin-top: 3vw;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 3vh;
+}
+
+.case-study .our-work .work{
+    width: 60%;
+    margin: auto;
+}
+.case-study .our-work .work div {
+    background: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    left: 70%;
+    transform: translate(0,-50%);
+    font-family: 'Metropolis-Light';
+}
+
+.case-study .our-work .work > a > img{
+    width: 100%;
+    height: auto;
+    margin-top: 9vh;
+}
+
+.case-study .our-work .work > p, .case-study .our-work .work > h2{
+    margin-top: 0;
+    font-family: 'Metropolis-Light';
+    line-height: 1.5rem;
+}
+.case-study .our-work .work > h2 {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.case-study .view-all{
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+    margin-top: 4vw;
+    border: 1px white solid;
+    padding: 1.5rem 3rem;
+    border-radius: 50vw;
+    margin-bottom: 10vh;
+
+}
+
+ .case-study .view-all a{
+    text-align: center;
+
+    color: white;
+    white-space: nowrap;
+    font-family: 'Metropolis-Light ';
+    font-weight: lighter;
+    text-align: center;
+    font-size: min(max(0.7rem,calc(0.7rem + 0.01vw)),1.75rem);
+    display: inline-block;
+    text-decoration: none;;
+    letter-spacing: min(max(0.2rem,calc(0.2rem + 0.01vw)),1.75rem);
+}
+
+
+
+    /* 990px and below */
+@media screen and (max-width: 990px) {
+    .case-study .our-work .work div {
+        font-size: 0.6rem;
+        left:65%;
+    }
+}
+
+
+@media screen and (max-width: 672px) {
+    .case-study{
+        margin-top: 15vh;
+    }
+
+    .case-study .view-all{
+        padding: 1rem 2rem;
+    }
+
+    .case-study .our-work .work{
+        width: 85%;
+    }
+
+    .case-study .our-work .work div {
+        font-size: 0.6rem;
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .case-study .our-work .work{
+        width: 90%;
+    }
+
+    .case-study .our-work .work div {
+        font-size: 0.6rem;
+        left: 45%;
+    }
+}

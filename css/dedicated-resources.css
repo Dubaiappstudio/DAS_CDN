@@ -1,0 +1,487 @@
+/* case study */
+hr {
+    flex: 1 0 61%;
+    margin: 5vh 4vw 0 4vw;
+    color: #dedede;
+}
+
+.web-development {
+   background-color: #fff;
+   position: relative;
+   z-index: 3;
+   padding: 4rem 0rem;
+   display: flex;
+   margin-bottom: -2px;
+   font-family: 'Metropolis-Light';
+}
+
+.web-development.black {
+    background-color: #000;
+    color: #fff;
+ }
+ .web-development.black.no-buttom-padding{
+     padding-bottom: 0;
+ }
+
+ .web-development.gradiant{
+    background: linear-gradient(55.38deg, #2B47F0 17.6%, #DD4FE9 75.36%);
+    padding: 3rem 0;
+    position: relative;
+ }
+
+ .web-development.gradiant svg.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+ }
+
+ .web-development.gradiant svg.bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.web-development .padding {
+    flex: 1;
+}
+
+.web-development .development-resource{
+    flex: 10;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.web-development .development-resource .title {
+    flex: 1 0 40%;
+    min-width: 31vmax;
+    margin-top: 2rem;
+    padding-right: 1vw;
+}
+
+.web-development .development-resource .title img{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.web-development .development-resource .description{
+    padding: 0 2rem;
+    flex: 1 0 50%;
+    min-width: 31vmax;
+}
+
+.web-development .development-resource .description div{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.web-development .development-resource .description span{
+    font-family: 'Metropolis-light';
+    color: #2B47F0;
+    display: inline-block;
+}
+
+.web-development .development-resource .description h1{
+    font-family: 'Metropolis-Bold';
+    font-size: 2rem;
+}
+
+
+
+.web-development .why-dastudio {
+    flex: 10;
+    overflow: hidden;
+    margin-right: 4vw;
+}
+
+.web-development .why-dastudio h2 {
+    font-family: 'Metropolis-Bold';
+    font-size: 2.5rem;
+}
+
+.web-development .why-dastudio span {
+    font-family: 'Metropolis-light';
+    color: #2B47F0;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.web-development .why-dastudio p{
+    line-height: 1.3rem;
+    margin: 2rem auto;
+}
+
+
+.web-development .advantages-of-dedicated-teams {
+    flex: 20;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.web-development .advantages-of-dedicated-teams h2{
+    font-family: 'Metropolis-Bold';
+    font-size: 3rem;
+    flex: 1 0 100%;
+    text-align: center;
+    margin: 4rem auto;
+    line-height: 3.5rem;
+}
+
+.web-development .advantages-of-dedicated-teams .advantage-wrapper{
+    display: flex;
+    flex: 1;
+}
+
+.web-development .advantages-of-dedicated-teams .advantage {
+    flex: 1 0;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.web-development .advantages-of-dedicated-teams .number-wrapper{
+    position: relative;
+    flex: 0;
+}
+
+.web-development .advantages-of-dedicated-teams .advantage .number-wrapper h3{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    font-family: 'Metropolis-Bold';
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.web-development .advantages-of-dedicated-teams .advantage .number-wrapper span{
+    font-family: 'Metropolis-Bold';
+    font-size: 8rem;
+    color: #dddddd88;
+}
+
+.web-development .advantages-of-dedicated-teams .advantage p{
+    text-align: justify;
+    line-height: 1.5rem;
+    flex: 1;
+    padding-bottom: 2rem;
+}
+
+.web-development .advantages-of-dedicated-teams .advantage .border{
+    flex: 0;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 100vw;
+    background: linear-gradient(to right, white, white), linear-gradient(to right, #2B47F0, #DD4FE9);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    padding: 1rem 2.5rem;
+    width: fit-content;
+}
+
+.web-development .advantages-of-dedicated-teams .advantage .border span{
+    font-family: 'Metropolis-Bold';
+}
+
+.web-development .dedicated-team{
+    flex: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.web-development .dedicated-team .image{
+    flex: 0;
+}
+
+.web-development .dedicated-team .image img{
+    width: 10rem;
+    height: auto;
+}
+
+.web-development .dedicated-team .description{
+    flex: 1;
+    padding: 1rem 1rem 0 1rem;
+    color: #fff;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.web-development .dedicated-team .description strong{
+    font-family: 'Metropolis-Bold';
+    font-size: 1.2rem;
+}
+
+.web-development .dedicated-team .description h2{
+    font-family: 'Metropolis-Bold';
+    font-size: 2rem;
+}
+
+.web-development .dedicated-team .description a{
+    border: 1px solid #fff;
+    border-radius: 50vw;
+    padding: 1rem;
+    white-space: nowrap;
+}
+
+
+.web-development .composition-of-dedicated-teams {
+    flex: 10;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
+}
+
+.web-development .composition-of-dedicated-teams span {
+    display: inline;
+    margin-bottom: 1rem;
+    font-family: 'Metropolis-Light';
+    font-size: 1rem;
+}
+
+.web-development .composition-of-dedicated-teams h2 {
+    font-family: 'Metropolis-Bold';
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 1rem 0;
+}
+
+.web-development .composition-of-dedicated-teams .header{
+    flex: none;
+    width: 100%;
+}
+
+.web-development .composition-of-dedicated-teams .team-member{
+    flex: 1 0 50%;
+    display: flex;
+    margin-top: 5vh;
+    text-align: justify;
+    line-height: 1.5rem;
+    /* max-width: 50%; */
+}
+
+.web-development .composition-of-dedicated-teams .team-member .image{
+    flex: 0.4;
+    align-self: center;
+    max-width: 7rem;
+}
+
+.web-development .composition-of-dedicated-teams .team-member img{
+    width: auto;
+    max-width: 7rem;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.web-development .composition-of-dedicated-teams .team-member h3{
+    font-family: 'Metropolis-Bold';
+    font-size: 1.8rem;
+    text-align: initial;
+}
+
+.web-development .composition-of-dedicated-teams .team-member p{
+    line-height: 1.8rem;
+}
+
+.web-development .composition-of-dedicated-teams .team-member .description{
+    flex: 4;
+    align-self: center;
+    padding: 2rem;
+}
+
+.web-development .our-stack{
+    flex: 10;
+}
+
+.web-development .our-stack h2{
+    font-family: 'Metropolis-Bold';
+    text-align: center;
+    font-size: 3rem;
+}
+
+.web-development .our-stack img{
+    width: 100%;
+    height: auto;
+}
+
+.web-development .carousel{
+    width: 60vw;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.web-development .carousel .slick-slide{
+    height: initial;
+}
+
+.web-development .carousel .carousel-item > img {
+    width: 100%;
+    height: auto;
+}
+
+.web-development .carousel .slick-prev, .slick-next{
+    z-index: 2;
+}
+
+.web-development .carousel .slick-prev:before{
+    color: #b7b7b7;
+}
+
+.web-development .carousel .slick-next:before{
+    color: #b7b7b7;
+}
+
+@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+    .web-development .development-resource .description span{ 
+        background-image: linear-gradient(to right, #2B47F0, #DD4FE9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+    .web-development .why-dastudio span {
+        background-image: linear-gradient(to right, #2B47F0, #DD4FE9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+
+    .web-development .advantages-of-dedicated-teams .advantage .number-wrapper span{
+        background-image: linear-gradient(to right, #2B47F0, #DD4FE9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.1;
+    }
+
+    .web-development .composition-of-dedicated-teams .header span{
+        background-image: linear-gradient(to right, #2B47F0, #DD4FE9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+/* 990px and below */
+@media screen and (max-width: 990px) {
+    .web-development .composition-of-dedicated-teams .team-member{
+        padding: 0 1rem;;
+    }
+
+    .web-development .composition-of-dedicated-teams .team-member .image{
+        flex: 1;
+    }
+
+    .web-development .composition-of-dedicated-teams .team-member img{
+        /* width: 60%; */
+        height: auto;
+        position: relative;
+    };
+}
+
+@media screen and (max-width: 672px) {
+
+    .web-development .dedicated-team .description{
+        text-align: center;
+    }
+
+    .web-development .composition-of-dedicated-teams h2 {
+        text-align: center;
+    }
+    
+    .web-development .composition-of-dedicated-teams .header{
+        text-align: center;
+    }
+
+    .web-development .development-resource .description{
+        text-align: center;
+    }
+
+    .web-development .advantages-of-dedicated-teams .advantage-wrapper{
+        flex-direction: column;
+    }
+
+    .web-development .advantages-of-dedicated-teams .advantage{
+        margin: 3rem auto;
+    }
+    
+    .web-development .advantages-of-dedicated-teams .advantage .number-wrapper h3{
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    .web-development .advantages-of-dedicated-teams .advantage .number-wrapper span{
+        display: block;
+        text-align: center;
+    }
+
+    .web-development .advantages-of-dedicated-teams .advantage p{
+        text-align: center;
+    }
+
+    .web-development .advantages-of-dedicated-teams .advantage .border{
+        margin: auto;
+    }
+
+    .web-development .dedicated-team{
+        flex-direction: column;
+    }
+
+    .web-development .composition-of-dedicated-teams .team-member{
+        flex: 1 0 100%;
+        flex-wrap: wrap;
+        padding: initial;
+        justify-content: center;
+    }
+
+    .web-development .composition-of-dedicated-teams .team-member .image{
+        flex: 1 0 100%;
+    }
+
+    .web-development .composition-of-dedicated-teams .team-member img{
+        width: 100%;
+        height: auto;
+        position: initial;
+        left: initial;
+        transform: initial;
+    }
+
+    .web-development .composition-of-dedicated-teams .team-member .description{
+        flex: 1 0 60%;
+    }
+
+    .web-development .composition-of-dedicated-teams .team-member .description h3,
+    .web-development .composition-of-dedicated-teams .team-member .description p{
+        text-align: center;
+    }
+
+    .web-development .our-stack h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .web-development .development-resource .description p{
+        line-height: 1rem; 
+        white-space: normal;
+    }
+
+    .web-development .advantages-of-dedicated-teams .advantage {
+        flex: 1 0 35vh;
+        margin: 0
+    }
+
+
+    .web-development .composition-of-dedicated-teams .team-member .image{
+        flex: 1 0 100%;
+    }
+
+ 
+}

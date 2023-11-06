@@ -1,0 +1,1069 @@
+.invert {
+    filter: invert(100%);
+}
+
+@keyframes line-with-circul {
+    0% {
+    }
+    100% {
+        transform: translateY(110vh);
+    }
+}
+
+.phone-icon:hover ~ .phone-number {
+    opacity: 1 !important;
+}
+@keyframes rolling {
+    0%,
+    22.5% {
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+    27.5%,
+    72.5% {
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    77.5%,
+    100% {
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+}
+@keyframes rollingPuls90degs {
+    0%,
+    22.5% {
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    27.5%,
+    72% {
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+    72.5% {
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+    77.5%,
+    100% {
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+}
+@keyframes rolling-light-website {
+    0%,
+    22.5%,
+    90%,
+    100% {
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+    27.5%,
+    80% {
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+}
+@keyframes rolling-light-webapp {
+    0%,
+    22.5%,
+    100% {
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    27.5%,
+    80% {
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+    95% {
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+}
+@keyframes rolling-light-web {
+    0%,
+    60%,
+    100% {
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    65%,
+    94% {
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+    95% {
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+}
+@keyframes rolling-light-mobile {
+    0%,
+    60% {
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+    65%,
+    95% {
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    100% {
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+}
+@keyframes slot-m-Rolling {
+    0.001%,
+    2.501%,
+    5.001%,
+    7.501%,
+    10.001%,
+    12.501%,
+    15.001%,
+    17.501%,
+    20.001%,
+    22.501%,
+    25.001%,
+    27.501%,
+    30.001%,
+    32.501% {
+        transform: translate(0, -0.83em);
+    }
+    2.5%,
+    5%,
+    7.5%,
+    10%,
+    12.5%,
+    15%,
+    17.5%,
+    20%,
+    22.5%,
+    25%,
+    27.5%,
+    30%,
+    32.5%,
+    35% {
+        transform: translate(0, 1.57em);
+    }
+
+    35.001%,
+    40.001%,
+    45.001%,
+    50.001% {
+        transform: translate(0, -0.83em);
+    }
+    40%,
+    45%,
+    50%,
+    55% {
+        transform: translate(0, 1.57em);
+    }
+
+    55.001%,
+    65.001%,
+    75.001% {
+        transform: translate(0, -0.83em);
+    }
+    65%,
+    75%,
+    85%,
+    87% {
+        transform: translate(0, 1.57em);
+    }
+
+    90% {
+        transform: translate(0, 1em);
+    }
+    92.5% {
+        transform: translate(0, 0.5em);
+    }
+    95% {
+        transform: translate(0, 0.1em);
+    }
+    100% {
+        transform: translate(0, 0.07em);
+    }
+    /* 90%{
+        transform: translate(0, 0.1em);
+    }
+    92.5%{
+        transform: translate(0, 0.35em);
+    }
+    95%, 100%{
+        transform: translate(0, 0.07em);
+    } */
+}
+@keyframes slot-o-Rolling {
+    0.001%,
+    2.501%,
+    5.001%,
+    7.501% {
+        transform: translate(0, -0.83em);
+    }
+    2.5%,
+    5%,
+    7.5%,
+    10% {
+        transform: translate(0, 1.57em);
+    }
+
+    10.001%,
+    15.001%,
+    20.001% {
+        transform: translate(0, -0.83em);
+    }
+    15%,
+    20%,
+    25% {
+        transform: translate(0, 1.57em);
+    }
+
+    25.001%,
+    35.001%,
+    45.001%,
+    55.001% {
+        transform: translate(0, -0.83em);
+    }
+    35%,
+    45%,
+    55%,
+    65% {
+        transform: translate(0, 1.57em);
+    }
+    67.5% {
+        transform: translate(0, 1.58em);
+    }
+    70% {
+        transform: translate(0, 1.3em);
+    }
+    72.5% {
+        transform: translate(0, 1em);
+    }
+    75% {
+        transform: translate(0, 0.5em);
+    }
+    77.5% {
+        transform: translate(0, -0.2em);
+    }
+    80%,
+    100% {
+        transform: translate(0, 0.07em);
+    }
+}
+@keyframes slot-g-Rolling {
+    0.001%,
+    2.501% {
+        transform: translate(0, -0.83em);
+    }
+    2.5%,
+    5% {
+        transform: translate(0, 1.57em);
+    }
+
+    5.001% {
+        transform: translate(0, -0.83em);
+    }
+    10% {
+        transform: translate(0, 1.57em);
+    }
+
+    10.001% {
+        transform: translate(0, -0.83em);
+    }
+    20% {
+        transform: translate(0, 1.57em);
+    }
+
+    20.001% {
+        transform: translate(0, -0.83em);
+    }
+    25% {
+        transform: translate(0, 1.57em);
+    }
+
+    25.001%,
+    27.501% {
+        transform: translate(0, -0.83em);
+    }
+    27.5%,
+    30% {
+        transform: translate(0, 1.57em);
+    }
+
+    30.001% {
+        transform: translate(0, -0.83em);
+    }
+    35% {
+        transform: translate(0, 1.57em);
+    }
+
+    35.001% {
+        transform: translate(0, -0.83em);
+    }
+    45% {
+        transform: translate(0, 1.57em);
+    }
+
+    45.001% {
+        transform: translate(0, -0.83em);
+    }
+    50% {
+        transform: translate(0, 1.57em);
+    }
+
+    50.001%,
+    52.501% {
+        transform: translate(0, -0.83em);
+    }
+    52.5%,
+    55% {
+        transform: translate(0, 1.57em);
+    }
+
+    55.001% {
+        transform: translate(0, -0.83em);
+    }
+    60% {
+        transform: translate(0, 1.57em);
+    }
+
+    60.001% {
+        transform: translate(0, -0.83em);
+    }
+    70% {
+        transform: translate(0, 1.57em);
+    }
+
+    70.001% {
+        transform: translate(0, -0.83em);
+    }
+    85% {
+        transform: translate(0, 1.57em);
+    }
+
+    85.001% {
+        transform: translate(0, -0.83em);
+    }
+    95% {
+        transform: translate(0, 1.57em);
+    }
+    96% {
+        transform: translate(0, 0.75em);
+    }
+    97% {
+        transform: translate(0, 0em);
+    }
+    98% {
+        transform: translate(0, -0.1em);
+    }
+    99% {
+        transform: translate(0, 0.3em);
+    }
+    100% {
+        transform: translate(0, 0.07em);
+        /* transform: translate(0, 0.19em); */
+    }
+}
+
+.read-more a:hover .circul {
+    width: 80%;
+}
+.we-handle-feature .title p {
+    font-family: "Metropolis-Light";
+    line-height: 1.5rem;
+}
+.complex-scroll-container .scroll.position-bottom {
+    top: initial;
+    left: initial;
+    bottom: 0;
+    right: 0;
+}
+.complex-scroll-container .horizontal-content .portfolio:hover .logo,
+.complex-scroll-container .horizontal-content .portfolio:active .logo,
+.complex-scroll-container .horizontal-content .portfolio.force .logo {
+    position: relative;
+    opacity: 1;
+}
+
+.complex-scroll-container .horizontal-content div:nth-child(2):hover,
+.complex-scroll-container .horizontal-content div:nth-child(2):active,
+.complex-scroll-container .horizontal-content div:nth-child(2).force {
+    background: linear-gradient(180deg, #000000 0%, #0d0202 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(4):hover,
+.complex-scroll-container .horizontal-content div:nth-child(4):active,
+.complex-scroll-container .horizontal-content div:nth-child(4).force {
+    background: linear-gradient(180deg, #c33c2b 0%, #1d2e70 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(5):hover,
+.complex-scroll-container .horizontal-content div:nth-child(5):active,
+.complex-scroll-container .horizontal-content div:nth-child(5).force {
+    background: linear-gradient(180deg, #26549f 0%, #377af5 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(6):hover,
+.complex-scroll-container .horizontal-content div:nth-child(6):active,
+.complex-scroll-container .horizontal-content div:nth-child(6).force {
+    background: linear-gradient(180deg, #000 0%, #0d0202 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(7):hover,
+.complex-scroll-container .horizontal-content div:nth-child(7):active,
+.complex-scroll-container .horizontal-content div:nth-child(7).force {
+    background: linear-gradient(180deg, #a9803c 0%, #66440c 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(8):hover,
+.complex-scroll-container .horizontal-content div:nth-child(8):active,
+.complex-scroll-container .horizontal-content div:nth-child(8).force {
+    background: linear-gradient(180deg, #1a1a1a 0%, #2c2b2b 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(9):hover,
+.complex-scroll-container .horizontal-content div:nth-child(9):active,
+.complex-scroll-container .horizontal-content div:nth-child(9).force {
+    background: linear-gradient(180deg, #87a0c6 0%, #202834 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(10):hover,
+.complex-scroll-container .horizontal-content div:nth-child(10):active,
+.complex-scroll-container .horizontal-content div:nth-child(10).force {
+    background: linear-gradient(180deg, #a5d270 0%, #8dbf5a 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(11):hover,
+.complex-scroll-container .horizontal-content div:nth-child(11):active,
+.complex-scroll-container .horizontal-content div:nth-child(11).force {
+    background: linear-gradient(180deg, #324a89 0%, #5ab3bd 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(12):hover,
+.complex-scroll-container .horizontal-content div:nth-child(12):active,
+.complex-scroll-container .horizontal-content div:nth-child(12).force {
+    background: linear-gradient(180deg, #bb273b 0%, #f24c58 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(13):hover,
+.complex-scroll-container .horizontal-content div:nth-child(13):active,
+.complex-scroll-container .horizontal-content div:nth-child(13).force {
+    background: linear-gradient(180deg, #f9db66 0%, #9f8625 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(14):hover,
+.complex-scroll-container .horizontal-content div:nth-child(14):active,
+.complex-scroll-container .horizontal-content div:nth-child(14).force {
+    background: linear-gradient(180deg, #7e468a 0%, #4b214e 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(15):hover,
+.complex-scroll-container .horizontal-content div:nth-child(15):active,
+.complex-scroll-container .horizontal-content div:nth-child(15).force {
+    background: linear-gradient(180deg, #74c0b9 0%, #3d827a 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(16):hover,
+.complex-scroll-container .horizontal-content div:nth-child(16):active,
+.complex-scroll-container .horizontal-content div:nth-child(16).force {
+    background: linear-gradient(180deg, #5873fc 0%, #16aef2 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(17):hover,
+.complex-scroll-container .horizontal-content div:nth-child(17):active,
+.complex-scroll-container .horizontal-content div:nth-child(17).force {
+    background: linear-gradient(180deg, #00bfff 0%, #53606c 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(18):hover,
+.complex-scroll-container .horizontal-content div:nth-child(18):active,
+.complex-scroll-container .horizontal-content div:nth-child(18).force {
+    background: linear-gradient(180deg, #cc0843 0%, #81052a 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(19):hover,
+.complex-scroll-container .horizontal-content div:nth-child(19):active,
+.complex-scroll-container .horizontal-content div:nth-child(19).force {
+    background: linear-gradient(180deg, #a5d270 0%, #8dbf5a 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(20):hover,
+.complex-scroll-container .horizontal-content div:nth-child(20):active,
+.complex-scroll-container .horizontal-content div:nth-child(20).force {
+    background: linear-gradient(180deg, #ff5800 0%, #ff5800 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(21):hover,
+.complex-scroll-container .horizontal-content div:nth-child(21):active,
+.complex-scroll-container .horizontal-content div:nth-child(21).force {
+    background: linear-gradient(180deg, #a97f4d 0%, #9c6021 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(22):hover,
+.complex-scroll-container .horizontal-content div:nth-child(22):active,
+.complex-scroll-container .horizontal-content div:nth-child(22).force {
+    background: linear-gradient(180deg, #2a3177 0%, #171d58 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(23):hover,
+.complex-scroll-container .horizontal-content div:nth-child(23):active,
+.complex-scroll-container .horizontal-content div:nth-child(23).force {
+    background: linear-gradient(180deg, #f2a975 0%, #fecaa5 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(24):hover,
+.complex-scroll-container .horizontal-content div:nth-child(24):active,
+.complex-scroll-container .horizontal-content div:nth-child(24).force {
+    background: linear-gradient(180deg, #bfd840 0%, #63721b 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(25):hover,
+.complex-scroll-container .horizontal-content div:nth-child(25):active,
+.complex-scroll-container .horizontal-content div:nth-child(25).force {
+    background: linear-gradient(180deg, #2ab7c7 0%, #0f0f0f 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(26):hover,
+.complex-scroll-container .horizontal-content div:nth-child(26):active,
+.complex-scroll-container .horizontal-content div:nth-child(26).force {
+    background: linear-gradient(180deg, #cbbe9d 0%, #cdc09d 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(27):hover,
+.complex-scroll-container .horizontal-content div:nth-child(27):active,
+.complex-scroll-container .horizontal-content div:nth-child(27).force {
+    background: linear-gradient(180deg, #706985 0%, #4e46 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(28):hover,
+.complex-scroll-container .horizontal-content div:nth-child(28):active,
+.complex-scroll-container .horizontal-content div:nth-child(28).force {
+    background: linear-gradient(180deg, #dc3d3d 0%, #2b3b57 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(29):hover,
+.complex-scroll-container .horizontal-content div:nth-child(29):active,
+.complex-scroll-container .horizontal-content div:nth-child(29).force {
+    background: linear-gradient(180deg, #79d083 0%, #2b3b57 100%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(30):hover,
+.complex-scroll-container .horizontal-content div:nth-child(30):active,
+.complex-scroll-container .horizontal-content div:nth-child(30).force {
+    background: linear-gradient(180deg, #8881e3 0%, #ffdf5c 100%);
+}
+
+@media (pointer: coarse) {
+    .complex-scroll-container
+        .horizontal-content
+        .portfolio.force-touch-secreen
+        .logo {
+        position: relative;
+        opacity: 1;
+    }
+    .complex-scroll-container
+        .horizontal-content
+        .portfolio.force-touch-secreen
+        h2 {
+        color: #fff;
+        top: 15%;
+        transform: translate(0%, 0%);
+        transition: all 0.3s ease-in-out;
+    }
+    .complex-scroll-container
+        .horizontal-content
+        .portfolio.force-touch-secreen
+        span {
+        color: #fff;
+        top: 15%;
+        transform: translate(-50%, 0%);
+        transition: all 0.3s 0.05s ease-in-out;
+    }
+    .complex-scroll-container
+        .horizontal-content
+        .portfolio.force-touch-secreen
+        .image {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.3s 0.05s ease-in-out;
+        pointer-events: none;
+        width: 100%;
+    }
+
+    .complex-scroll-container .horizontal-content div:nth-child(2):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(2):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(2).force-touch-secreen {
+        background: linear-gradient(180deg, #000000 0%, #0d0202 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(3):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(3):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(3).force-touch-secreen {
+        background: linear-gradient(180deg, #f2f58a 0%, #a1a603d4 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(4):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(4):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(4).force-touch-secreen {
+        background: linear-gradient(180deg, #c33c2b 0%, #1d2e70 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(5):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(5):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(5).force-touch-secreen {
+        background: linear-gradient(180deg, #26549f 0%, #377af5 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(6):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(6):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(6).force-touch-secreen {
+        background: linear-gradient(180deg, #000 0%, #0d0202 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(7):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(7):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(7).force-touch-secreen {
+        background: linear-gradient(180deg, #a9803c 0%, #66440c 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(8):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(8):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(8).force-touch-secreen {
+        background: linear-gradient(180deg, #1a1a1a 0%, #2c2b2b 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(9):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(9):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(9).force-touch-secreen {
+        background: linear-gradient(180deg, #87a0c6 0%, #202834 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(10):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(10):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(10).force-touch-secreen {
+        background: linear-gradient(180deg, #a5d270 0%, #8dbf5a 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(11):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(11):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(11).force-touch-secreen {
+        background: linear-gradient(180deg, #324a89 0%, #5ab3bd 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(12):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(12):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(12).force-touch-secreen {
+        background: linear-gradient(180deg, #bb273b 0%, #f24c58 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(13):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(13):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(13).force-touch-secreen {
+        background: linear-gradient(180deg, #f9db66 0%, #9f8625 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(14):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(14):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(14).force-touch-secreen {
+        background: linear-gradient(180deg, #7e468a 0%, #4b214e 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(15):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(15):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(15).force-touch-secreen {
+        background: linear-gradient(180deg, #74c0b9 0%, #3d827a 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(16):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(16):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(16).force-touch-secreen {
+        background: linear-gradient(180deg, #5873fc 0%, #16aef2 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(17):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(17):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(17).force-touch-secreen {
+        background: linear-gradient(180deg, #00bfff 0%, #53606c 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(18):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(18):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(18).force-touch-secreen {
+        background: linear-gradient(180deg, #cc0843 0%, #81052a 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(19):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(19):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(19).force-touch-secreen {
+        background: linear-gradient(180deg, #a5d270 0%, #8dbf5a 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(20):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(20):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(20).force-touch-secreen {
+        background: linear-gradient(180deg, #ff5800 0%, #ff5800 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(21):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(21):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(21).force-touch-secreen {
+        background: linear-gradient(180deg, #a97f4d 0%, #9c6021 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(22):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(22):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(22).force-touch-secreen {
+        background: linear-gradient(180deg, #2a3177 0%, #171d58 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(23):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(23):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(23).force-touch-secreen {
+        background: linear-gradient(180deg, #f2a975 0%, #fecaa5 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(24):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(24):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(24).force-touch-secreen {
+        background: linear-gradient(180deg, #bfd840 0%, #63721b 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(25):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(25):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(25).force-touch-secreen {
+        background: linear-gradient(180deg, #2ab7c7 0%, #0f0f0f 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(26):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(26):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(26).force-touch-secreen {
+        background: linear-gradient(180deg, #cbbe9d 0%, #cdc09d 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(27):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(27):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(27).force-touch-secreen {
+        background: linear-gradient(180deg, #706985 0%, #4e46 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(28):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(28):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(28).force-touch-secreen {
+        background: linear-gradient(180deg, #dc3d3d 0%, #2b3b57 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(29):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(29):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(29).force-touch-secreen {
+        background: linear-gradient(180deg, #79d083 0%, #2b3b57 100%);
+    }
+    .complex-scroll-container .horizontal-content div:nth-child(30):hover,
+    .complex-scroll-container .horizontal-content div:nth-child(30):active,
+    .complex-scroll-container
+        .horizontal-content
+        div:nth-child(30).force-touch-secreen {
+        background: linear-gradient(180deg, #8881e3 0%, #ffdf5c 100%);
+    }
+}
+.we-cerate h3 {
+    font-size: inherit;
+    margin: inherit;
+}
+
+#portfilio h2 {
+    font-size: 2rem;
+    margin: auto;
+    text-align: left;
+    max-width: 65%;
+    color: white;
+    line-height: 2.4rem;
+}
+
+/* so it can work only with mouse hovering */
+@media screen and (hover: hover) {
+    .mobile-apps:hover ~ .img11 {
+        z-index: 3;
+        opacity: 1;
+    }
+    .mobile-apps:hover ~ .img12 {
+        z-index: 3;
+        opacity: 1;
+    }
+    .website-development:hover ~ .img21 {
+        z-index: 3;
+        opacity: 1;
+    }
+    .website-development:hover ~ .img22 {
+        z-index: 3;
+        opacity: 1;
+    }
+    .ui-ux-design:hover ~ .img31 {
+        z-index: 3;
+        opacity: 1;
+    }
+    .ui-ux-design:hover ~ .img32 {
+        z-index: 3;
+        opacity: 1;
+    }
+    .social-media:hover ~ .img41 {
+        z-index: 3;
+        opacity: 1;
+    }
+    .social-media:hover ~ .img42 {
+        z-index: 3;
+        opacity: 1;
+    }
+    .branding:hover ~ .img51 {
+        z-index: 3;
+        opacity: 1;
+    }
+    .branding:hover ~ .img52 {
+        z-index: 3;
+        opacity: 1;
+    }
+    .dedicated-resources:hover ~ .img61 {
+        z-index: 3;
+        opacity: 1;
+    }
+    .dedicated-resources:hover ~ .img62 {
+        z-index: 3;
+        opacity: 1;
+    }
+    .copyright:hover ~ .img71 {
+        z-index: 3;
+        opacity: 1;
+    }
+    .copyright:hover ~ .img72 {
+        z-index: 3;
+        opacity: 1;
+    }
+}
+
+@keyframes hovering {
+    0% {
+        transform: translate(0em, 0.7em);
+    }
+    100% {
+        transform: translate(0em, 0.1em);
+    }
+}
+
+/* 990px and below */
+
+@media screen and (max-width: 1280px) {
+    .we-cerate .header .title h2 {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .complex-scroll-container .vertical-displacement {
+        height: 1600vw;
+    }
+    .complex-scroll-container .horizontal-content {
+        width: 1680vw;
+    }
+
+    .complex-scroll-container .horizontal-content > div {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .complex-scroll-container .vertical-displacement {
+        height: 1750vw;
+    }
+    .complex-scroll-container .horizontal-content {
+        width: 1960vw;
+    }
+
+    .complex-scroll-container .horizontal-content > div {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .techs h2 {
+        padding: 0 1rem;
+        width: auto;
+    }
+
+    .process .header h2 {
+        margin: auto;
+        text-align: center;
+    }
+
+    .process .desktop-screen-process {
+        display: none;
+    }
+
+    .process .mobile-screen-process {
+        display: block;
+    }
+
+    .process .header img {
+        width: 20%;
+        height: fit-content;
+        position: relative;
+        z-index: 4;
+        margin: auto 0;
+    }
+
+    .process .list-wrapper {
+        position: relative;
+    }
+
+    .process .list-wrapper .side-line {
+        height: 86%;
+        width: 0.05rem;
+        position: absolute;
+        z-index: 5;
+        left: 0;
+        top: 7%;
+        background-color: #dd4fe9;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .process .list-wrapper .side-line > div {
+        flex: 0;
+        padding: 0.325rem;
+        border-radius: 100%;
+        margin-left: -0.3rem;
+        background: linear-gradient(69deg, #2b47f0 24%, #dd4fe9 75%);
+    }
+
+    .process .list-wrapper .list > div {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        padding: 1rem 0px;
+    }
+
+    .process .list-wrapper .list > div:not(:last-child):after {
+        content: "";
+        width: 98%;
+        height: 0.1rem;
+        background: #dc4fe93c;
+        position: absolute;
+        bottom: 0px;
+        left: 2%;
+    }
+
+    .process .list-wrapper .list div img {
+        flex: 1;
+        width: 8%;
+        height: fit-content;
+        margin: auto 1rem;
+        position: relative;
+        z-index: 5;
+    }
+
+    .process .list-wrapper .list div p {
+        flex: 8;
+        font-family: "Metropolis-light";
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin: auto;
+        margin-left: 2rem;
+        position: relative;
+        z-index: 5;
+        text-align: justify;
+        padding: 1rem 0;
+    }
+    /*  */
+    .we-cerate .header .title p {
+        font-size: 5rem;
+    }
+
+    .process .header img {
+        display: none;
+    }
+
+    .process .list-wrapper .side-line {
+        display: none;
+    }
+
+    .process .list-wrapper .list > div {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .process .list-wrapper .list > div:after {
+        content: "";
+        width: 100%;
+        left: 0%;
+    }
+
+    .process .list-wrapper .list div img {
+        margin: auto;
+        width: 25%;
+        height: auto;
+    }
+
+    .process .list-wrapper .list div span {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 0.8rem;
+        font-family: "Metropolis-bold";
+        flex: 4;
+        margin: auto;
+        position: relative;
+        z-index: 5;
+        display: block;
+        margin-block-start: 1.67em;
+        margin-block-end: 1.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .process .list-wrapper .list div p {
+        padding-bottom: 2rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .complex-scroll-container .vertical-displacement {
+        height: 2000vw;
+    }
+
+    .complex-scroll-container .horizontal-content {
+        width: 2240vw;
+    }
+
+    .complex-scroll-container .horizontal-content > div {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .viewport-one .wraper {
+        position: relative;
+        display: inline-block;
+        z-index: 3;
+        top: 50%;
+        left: 49%;
+        width: 75%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+    .complex-scroll-container .vertical-displacement {
+        height: 2500vw;
+    }
+
+    .complex-scroll-container .horizontal-content {
+        width: 2800vw;
+    }
+
+    .complex-scroll-container .horizontal-content > div {
+        width: 100vw;
+    }
+}

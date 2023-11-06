@@ -1,0 +1,257 @@
+/* case study */
+hr {
+    flex: 1 0 61%;
+    margin: 5vh 4vw 0 4vw;
+    color: #dedede;
+}
+
+.web-development {
+   background-color: #fff;
+   position: relative;
+   z-index: 3;
+   padding: 6rem 0rem;
+   display: flex;
+   display: flex;
+   margin-bottom: -2px;
+}
+
+.web-development .padding {
+    flex: 1;
+}
+
+.web-development .about-service{
+    flex: 10;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.web-development .about-service .title {
+    flex: 1 0 40%;
+    min-width: 31vmax;
+    margin-top: 2rem;
+    padding-right: 1vw;
+}
+
+.web-development .about-service .title img{
+    display: block;
+    width: 80%;
+    height: auto;
+    position: relative;
+}
+
+.web-development .about-service .description {
+    flex: 1 0 50%;
+    min-width: 31vmax;
+}
+
+.web-development .about-service .description div{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.web-development .about-service .description h1{
+    font-family: 'Metropolis-Bold';
+}
+
+.web-development .about-service .description p{
+    font-family: 'Metropolis-Light';
+    line-height: 1.7rem;
+    line-height: 2rem;
+    margin: 0px;
+    margin-top: 2rem;
+}
+
+.cms{
+    background: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    color: #fff;
+    padding: 2rem 2rem 0 2rem  ;
+}
+
+.cms .wrapper{
+    overflow: hidden;
+}
+
+.cms .wrapper .inner-border-fixer{
+    margin: 0 -2px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cms .wrapper .inner-border-fixer .wordpress,
+.cms .wrapper .inner-border-fixer .shopify{
+    flex: 1;
+    padding: 3rem 6rem;
+    margin-bottom: -2px;
+    border-right: 1px solid #e7e7e783;
+ 
+}
+
+.cms .wrapper .inner-border-fixer img{
+    width: 20rem;
+    height: auto;
+    position: relative;
+    z-index: 4;
+}
+
+.cms .wrapper .inner-border-fixer h5{
+    font-family: 'Metropolis-Bold';
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 4;
+}
+
+.cms .wrapper .inner-border-fixer p{
+    font-family: 'Metropolis-light';
+    font-size: 1rem;
+    line-height: 1.2rem;
+    position: relative;
+    z-index: 4;
+}
+
+.cms .wrapper .inner-border-fixer a{
+    text-decoration: none;
+}
+
+.cms .wrapper .inner-border-fixer .anchor-wrapper a{
+    color: white;
+    white-space: nowrap;
+    font-family: 'Metropolis-Light';
+    text-align: center;
+    font-size: 0.8rem;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px white solid;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+    z-index: 4;
+}
+
+.cms svg{
+    margin-bottom: -2px;
+}
+
+.web-development .we-handle-feature {
+    flex: 10;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-right: 4vw;
+}
+
+.web-development .we-handle-feature div{
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    margin-right: -2px;
+    margin-bottom: -2px;
+}
+
+.web-development .we-handle-feature .title {
+    flex: 1 0 35%;
+    min-width: 31vmax;
+    margin-top: 2rem;
+    margin-left: 4vw;
+    padding-right: 4vw;
+}
+
+.web-development .we-handle-feature .title span{
+    display: inline-block;
+    font-family: 'Metropolis-Light';
+    padding: 1rem;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.web-development .we-handle-feature .title span.active{
+    display: inline-block;
+    font-family: 'Metropolis-Medium';
+    background: linear-gradient(55.38deg, #2B47F0 17.6%, #DD4FE9 75.36%);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.web-development .we-handle-feature .title p {
+    font-family: 'Metropolis-Light';
+    line-height: 1.5rem;
+}
+
+.web-development .we-handle-feature .description {
+    flex: 1 0 45%;
+    min-width: 31vmax;
+    margin-left: 4vw;
+    display: none;
+}
+
+.web-development .we-handle-feature .description.active {
+    display: initial;
+}
+
+.web-development .we-handle-feature .description h2 {
+    font-family: 'Metropolis-Bold';
+}
+
+.web-development .we-handle-feature .description p {
+    font-family: 'Metropolis-Light';
+    line-height: 1.5rem;
+}
+
+.web-development .we-handle-feature .description ul {
+    list-style: none;
+    list-style-position: inside;
+    list-style-image: url(../images/right-arrow.webp);
+    padding: 0;
+    line-height: 2rem;
+    font-family: 'Metropolis-Light';
+}
+
+/* 990px and below */
+@media screen and (max-width: 990px) {
+
+}
+
+@media screen and (max-width: 895px) {
+    .cms .wrapper .inner-border-fixer img{
+        margin: auto;
+        display: block;
+    }
+    
+    .cms .wrapper .inner-border-fixer h5{
+        text-align: center;
+    }
+    
+    .cms .wrapper .inner-border-fixer p{
+        text-align: center;
+    }
+
+    .cms .wrapper .inner-border-fixer .anchor-wrapper{
+        display:table;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 672px) {
+}
+
+@media screen and (max-width: 300px) {
+    .cms .wrapper .inner-border-fixer .wordpress,
+    .cms .wrapper .inner-border-fixer .shopify{
+        padding: 0;
+        padding: 3rem 0;
+    }
+    .web-development .about-service .title h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        word-wrap: break-word;
+    }
+
+    .web-development .about-service .description p{
+        line-height: 1rem; 
+        white-space: normal;
+    }
+}

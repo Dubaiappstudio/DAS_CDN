@@ -1,0 +1,625 @@
+/* case study */
+
+#scroll{
+    background: white;
+}
+hr {
+    flex: 1 0 61%;
+    margin: 5vh 4vw 0 4vw;
+    color: #dedede;
+}
+.padding{
+    flex: 1;
+}
+.flex-box{
+    flex: 10;
+}
+#card-1{
+    background-image: url('/images/design_header.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+#card-1 h1{
+    margin-top: 20rem;
+    width: 80%;
+    font-size: 3em;
+}
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 2;
+    cursor: pointer;
+  }
+#card-2{
+    background-color: white;
+    background-image: none;
+    color: black;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+#card-2 .choose-us{
+    background-color: white;
+    padding: 0;
+}
+#card-2 .choose-us p{
+    color:black
+}
+#card-2 .item{
+    box-shadow: 0 4px 8px 0 #ededed, 0 6px 20px 0 #EDEDED;
+    margin: 25px;
+    padding: 25px;
+    width: 35%;
+    position: relative;
+    z-index: 5;
+}
+#card-2 .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#card-2 .row .item p{
+    font-family: 'Metropolis-Light';
+    line-height: 2rem;
+    color: black;
+}
+#card-2 .row .item span{
+    font-family: 'Metropolis-Bold';
+    margin-right: 0.5rem;
+}
+#card-3 h2 ,
+#card-3 span{
+    text-align: left ;
+    left: 0;
+    transform: unset;
+}
+#card-3 .row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    right: 10%;
+}
+#card-3 .row .item{
+    width: 35%;
+    padding: 50px 0;
+    font-size: 18px;
+    z-index: 5;
+    position: relative;
+}
+#card-3 .row .item p{
+    font-family: 'Metropolis-Light';
+    line-height: 2rem;
+    color: white;
+}
+#card-3 .row .item span{
+    font-family: 'Metropolis-Bold';
+    margin-bottom: 18px;
+    display: block;
+}
+#card-3 .row .last{
+    width: 50% !important;
+}
+#card-2 .item:after{
+    display: block;
+    content: '';
+    border-bottom: solid 5px transparent;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, white, white), linear-gradient(to right, #2B47F0, #DD4FE9);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+#card-2 .item:hover:after{
+    transform: scaleX(1);
+}
+#card-2 .item:after{
+    transform-origin:0% 50%;
+}
+
+#card-2 .item:hover span{
+    background-image: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+#last-item:hover:after{
+    transform: scaleX(0) !important;
+}
+
+.cms .team .card-content{
+    background-color: white;
+    color: black;
+    padding: 3rem 5rem;
+    position: relative;
+    z-index: 10;
+}
+.cms .team .card-content h3{
+    font-size: 2em;
+    font-family: 'Metropolis-Bold';
+    line-height: 1.3em;
+}
+.cms .team .card-content p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: 'Metropolis-Light';
+}
+.cms{
+    background: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    color: #fff;
+    position: relative;
+    padding: 5rem 0;
+    display: flex;
+}
+
+.cms .team span{
+    font-family: 'Metropolis-Light';
+    font-size: 1.3rem;
+    line-height: 2rem;
+    position: relative;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-50%,0%);
+    display: inline-block;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.cms .team h1, .cms .team h2{
+    font-family: 'Metropolis-Bold';
+    font-size: 3rem;
+    line-height: 4rem;
+    position: relative;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-50%,0%);
+    display: inline-block;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.cms .team img{
+    width: 80%;
+    height: auto;
+    position: relative;
+    z-index: 4;
+    margin: auto;
+    display: block;
+    margin-bottom: -9rem;
+}
+
+.cms .team .icon {
+    width: 60px;
+    height: 65px;
+    position: relative;
+    z-index: 4;
+    margin: auto;
+    display: block;
+    margin-bottom: 35px;
+    background-image: url('/images/shopify_icon.svg');
+}
+
+.choose-us{
+    background-color: #181818;
+    padding: 5rem;
+    padding-top: 8rem;
+}
+.choose-us .row{
+    display: flex;
+    justify-content: center;
+}
+.choose-us .row .item{
+    width: 25%;
+    padding: 50px;
+    font-size: 18px;
+    position: relative;
+    z-index: 5;
+}
+.choose-us .row .item p{
+    font-family: 'Metropolis-Light';
+    line-height: 2rem;
+    color: white;
+}
+.choose-us .row .item span{
+    font-family: 'Metropolis-Bold';
+}
+
+.buy-shop{
+    display: flex;
+    background: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    align-items: center;
+    color: #fff;
+    position: relative;
+    padding: 3rem 0;
+}
+
+.buy-shop .shop{
+    display: flex;
+    width: 100%;
+}
+
+.buy-shop svg.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.buy-shop svg.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.buy-shop .shop p{
+    flex: 4;
+    font-family: 'Metropolis-Light';
+    font-size: 1rem;
+    line-height: 2rem;
+    position: relative;
+    z-index: 4;
+    /* margin: 2rem 2rem; */
+}
+
+.buy-shop .shop p span{
+    font-size: 1.3rem;
+
+}
+
+.buy-shop .shop p span a{
+    font-family: 'Metropolis-bold';
+    color: white;
+    text-decoration: none;}
+
+.buy-shop .shop img{
+    /* flex: 1; */
+    /* width: 20rem; */
+    height: auto;
+    max-width: 50vw;
+    position: relative;
+    z-index: 4;
+    margin: auto;
+    margin-top: -7rem;
+}
+
+.buy-shop .stroke {
+    width: 80%;
+    position: absolute; 
+}
+.buy-shop .card{
+    width: 70%;
+    padding-left: 2rem;
+    line-height: 2em;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+.buy-shop .card p{
+    width: 80%
+}
+
+.buy-shop .card-image{
+    width: 30%;
+   
+}
+
+.override {
+    margin-top: 8rem !important;
+}
+
+.ui-ux-design {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 3;
+    padding: 3rem 0rem;
+    display: flex;
+    display: flex;
+    margin-bottom: -2px;
+ }
+
+ .ui-ux-design.second{
+     padding-bottom: 10rem;
+ }
+
+ .ui-ux-design.development-process-background{
+     background-image: url(/images/design_card_background.webp);
+     padding: 8vmin;
+     background-size: 65% 100%;
+     background-color: white;
+     background-repeat: no-repeat;
+     background-position-x: right;
+ }
+
+ .ui-ux-design .content-div {
+     flex: 10;
+ }
+
+ /* .center {
+     text-align: center;
+ } */
+
+ .ui-ux-design .content-div > p,
+ .ui-ux-design .content-div > h1{
+     color: #fff;
+     font-family: 'Metropolis-Light';
+     line-height: 1.5rem;
+ }
+
+ .ui-ux-design .content-div > p.strong{
+     font-family: 'Metropolis-Bold';
+     font-size: 2rem;
+     line-height: 2rem;
+ }
+
+ .ui-ux-design .content-div .projects {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(auto-fit,25rem);
+     flex-wrap: wrap;
+     /* justify-content: center; */
+     padding-top: 2vmax;
+ }
+
+ .ui-ux-design .content-div .projects .project{
+     flex: 1;
+     font-family: 'METROPOLIS-Light';
+     color: #fff;
+     position: relative;
+     white-space: nowrap;
+     text-align: center;
+     border: 2px solid transparent;
+     border-radius: 100vw;
+     background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(to right, #2B47F0, #DD4FE9);
+     background-clip: padding-box, border-box;
+     background-origin: padding-box, border-box;
+     margin: 1rem 1rem;
+     padding: 1.5rem 1.5rem;
+ }
+
+ .ui-ux-design .content-div .projects .project h2{
+     margin: 0;
+     font-size: 1.3rem;
+ }
+
+
+ .ui-ux-design .content-div .about-service {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .ui-ux-design .content-div .about-service .left{
+     flex: 1 0 30%;
+     background-color: white;
+     min-width: 40vmin;
+     margin: 5rem 0;
+ }
+
+ .ui-ux-design .content-div .about-service .left div {
+     /*padding: 2rem;*/
+     font-family: 'Metropolis-Light';
+ }
+.ui-ux-design .content-div .about-service .left .inner-container{
+    padding: 3rem;
+    border: 1px solid transparent;
+    background: linear-gradient(to right, white, white), linear-gradient(to right, #2B47F0, #DD4FE9);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+.ui-ux-design .content-div .about-service .left .inner-container .text ,
+.ui-ux-design .content-div .about-service .left .inner-container .arrow{
+    color: black;
+    background-image: none;
+    -webkit-text-fill-color: unset;
+}
+
+.ui-ux-design .content-div .about-service .left .inner-container span{
+     /*color: #fff;*/
+     font-family: 'Metropolis-Light';
+     background-image: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+     background-size: 100%;
+     background-clip: text;
+     -webkit-background-clip: text;
+     -moz-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -moz-text-fill-color: transparent;
+ }
+
+ .ui-ux-design .content-div .about-service .left div h2{
+     /*color: #fff;*/
+     font-family: 'Metropolis-Bold';
+     font-size: 2rem;
+ }
+
+.ui-ux-design .content-div .about-service .left div a{
+    /* color: white; */
+    color: black;
+    white-space: nowrap;
+    font-family: 'Metropolis-Light';
+    text-align: center;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border-bottom: 1px black solid;
+    letter-spacing: 0.2rem;
+    padding-bottom: 0.5rem;
+}
+
+ .ui-ux-design .content-div .about-service .left div p{
+     /*color: #fff;*/
+     line-height: 2rem;
+ }
+
+ .ui-ux-design .content-div .about-service .left img{
+     width: 100%;
+     height: auto;
+ }
+
+ .ui-ux-design .content-div .about-service .right{
+     flex: 1 0 50%;
+ }
+
+ .ui-ux-design.white {
+     background-color: #fff;
+ }
+/* 990px and below */
+@media screen and (max-width: 1375px) {
+    #card-2{
+        margin-top: 12rem;
+    }
+    #card-1 h1{
+        margin-top: 8rem;
+    }
+    .buy-shop .card{
+        padding-left: 8rem;
+    }
+}
+@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+    .ui-ux-design .content-div .projects .project a{ 
+        background-image: linear-gradient(to right, #2B47F0, #DD4FE9);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+}
+@media screen and (max-width: 1100px) {
+    .get-quote,.lang{
+        display: block !important;
+    }
+    .con{
+        display: inline-block !important;
+    }
+    .navbar,.contact-btn{
+        display: none !important;
+    }
+    #card-2{
+        margin-top: 18rem;
+    }
+}
+
+
+@media screen and (max-width: 895px) {
+    .ui-ux-design .content-div .projects .project{
+        flex: 1 0 25vw;
+    }
+    #card-1{
+        background-position: center center;
+        height: 35vh;
+    }
+    #card-1 h1{
+        font-size: 1.8em;
+    }
+    .cms .team .card-content{
+        padding: 1rem 3rem;
+    }
+    .cms .team .card-content h3{
+        font-size: 1.5em;
+    }
+    .cms .team .card-content p{
+        font-size: unset;
+    }
+    #card-2 .team h2 ,#card-3 .team h2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    #card-2 ,#card-3{
+        padding:0 ;
+    }
+    #card-2{
+        margin-top: 10rem;
+    }
+    #card-2 .row .item{
+        width: auto;
+        padding: 16px 35px;
+        font-size: 1em;
+    }
+    #card-3 .row{
+        justify-content: normal;
+        right: unset;
+    }
+    #card-3{
+        padding: 5rem 0 ;
+    }
+    #card-3 .row .item{
+        width: auto !important;
+        padding: 16px 0;
+        font-size: 1em;
+    }
+    .buy-shop .shop{
+        flex-wrap: wrap;
+    }
+    .buy-shop .shop img{
+        width: 20rem;
+    }
+    .buy-shop .shop{
+        justify-content: center;
+    }
+    .buy-shop .card, .buy-shop .card-image{
+        width:auto;
+    }
+    .buy-shop .card{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .ui-ux-design .content-div > p.strong{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .ui-ux-design .content-div .projects .project{
+        flex: 1 0 40vw;
+    }
+
+    .ui-ux-design .content-div .projects .project p {
+        font-size: 0.8rem;
+    }
+    #card-1 h1{
+        margin-top: 0;
+    }
+    .cms .team img{
+        margin-bottom: -9rem;
+    }
+
+    .for-you{
+        padding-top: 9rem;
+    }
+    #card-2{
+        margin-top: 18rem;
+    }
+    .buy-shop{
+        flex-direction: column;
+    }
+    .buy-shop{
+        padding: 3rem 3rem;
+    }
+    .buy-shop .content{
+        margin-top: 0;
+    }
+    #card-3 .team span{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .ui-ux-design .content-div .projects .project{
+        flex: 1 0 60vw;
+        padding: 1rem;
+    }
+
+    .ui-ux-design .content-div .project .background {
+        margin: -1rem;
+    }
+}

@@ -1,0 +1,992 @@
+.side-line {
+    width: 4em;
+    position: fixed;
+    z-index: 5;
+    left: 0.5vw;
+    bottom: 110vh;
+    transition: bottom 0.1s ease;
+    animation: line-with-circul 5s ease forwards;
+}
+
+.side-line .circul {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    bottom: 1em;
+    cursor: pointer;
+    /* animation: phone-line 2s ease; */
+}
+
+.side-line .circul.whatsapp {
+    z-index: 3;
+    animation: whatsapp-line 2s ease;
+}
+
+.side-line .circul.phone {
+    bottom: 5.5em;
+    /* animation: whatsapp-line 2s ease; */
+}
+
+.side-line .circul a {
+    display: flex;
+    text-decoration: none;
+}
+
+.side-line .circul.phone > a > span {
+    white-space: nowrap;
+    margin: auto;
+    color: white;
+    font-family: "Metropolis-Bold";
+    margin-left: 1rem;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.side-line a img {
+    width: auto;
+    height: 4em;
+}
+
+.side-line .main-line {
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+    width: 110vh;
+    height: auto;
+    position: relative;
+    bottom: 6vh;
+    left: 50%;
+    transform-origin: center left;
+    transform: rotate(-90deg);
+    animation: line 2s ease;
+}
+
+.side-line .main-line .inline-text {
+    letter-spacing: 0.5rem;
+    z-index: 2;
+    color: #fff;
+    font-family: "Metropolis-Light";
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.side-line .main-line .line {
+    flex: 1 0;
+    height: 0.1rem;
+    background-color: #777;
+    margin: auto 0.5rem auto 0rem;
+}
+
+.omg-website {
+    padding-top: 15vh;
+}
+
+.omg {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    justify-content: center;
+    font-size: 2.5rem;
+    align-items: center;
+    font-family: "Metropolis-Bold";
+}
+
+.omg i {
+    font-style: normal;
+    font-size: 1.5em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.omg .we {
+    margin-right: 0.4em;
+}
+
+.omg .bold {
+    text-align: center;
+    position: relative;
+}
+
+.omg .bold .design {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: perspective(10em) rotateX(85deg) translateZ(1em);
+    animation: rolling 3s infinite;
+    letter-spacing: 0.1em;
+    opacity: 0;
+}
+
+.omg .bold .develop {
+    position: relative;
+    animation: rollingPuls90degs 3s infinite;
+}
+
+.omg .light {
+    font-family: "Metropolis-light";
+    position: relative;
+}
+
+.omg .light .web {
+    position: absolute;
+    top: 0;
+    left: 1.2em;
+    display: flex;
+    animation: rolling-light-web 4s infinite;
+}
+
+.omg .light .inner-web {
+    position: relative;
+}
+
+.omg .light .web .site {
+    animation: rolling-light-website 4s infinite;
+}
+
+.omg .light .web .app {
+    position: absolute;
+    left: 0.3em;
+    top: 0;
+    animation: rolling-light-webapp 4s infinite;
+}
+
+.omg .mobile {
+    animation: rolling-light-mobile 4s infinite;
+    position: relative;
+}
+
+.omg .slot-word {
+    display: flex;
+    font-size: 3.5em;
+    font-family: "Metropolis-Bold";
+    overflow: hidden;
+    color: #dd4fe9;
+    margin: 0em 0.2em 0.1em 0.2em;
+    line-height: 1em;
+}
+
+.omg .letter-wrapper {
+    position: relative;
+}
+
+.omg .letter-wrapper.letter-o {
+    transform: translate(0, 0.07em);
+}
+
+.omg .letter-wrapper.letter-m {
+    transform: translate(0, 0.07em);
+}
+
+.omg .letter-wrapper.letter-g {
+    transform: translate(0, 0.07em);
+}
+
+.omg .letter-wrapper.letter-o.animate {
+    animation: slot-o-Rolling 3s ease-out forwards;
+}
+
+.omg .letter-wrapper.letter-m.animate {
+    animation: slot-m-Rolling 3s ease-out forwards;
+}
+
+.omg .letter-wrapper.letter-g.animate {
+    animation: slot-g-Rolling 3s ease-out forwards;
+}
+
+.omg .letter-wrapper .mask {
+    position: absolute;
+    opacity: 0.7;
+}
+
+.omg .letter-wrapper .upper-mask {
+    top: -0.8em;
+    width: 0.81em;
+    height: 1em;
+}
+
+.omg .letter-wrapper .lower-mask {
+    left: 0;
+    top: 0.8em;
+    width: 0.81em;
+    height: 1em;
+}
+
+.omg .letter-wrapper .upper-mask2 {
+    top: -1.6em;
+    width: 0.81em;
+    height: 1em;
+}
+
+.omg .letter-wrapper .lower-mask2 {
+    left: 0;
+    top: 1.6em;
+    width: 0.81em;
+    height: 1em;
+}
+
+.omg .slot-word .letter-wrapper > span {
+    color: #2b47f0;
+}
+
+.omg-p {
+    color: white;
+    position: relative;
+    z-index: 3;
+    font-family: "Metropolis-Light";
+    margin: 3em 10vw;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6em;
+    animation: name duration timing-function delay iteration-count direction
+        fill-mode;
+}
+
+.omg-p a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem !important;
+}
+
+.read-more {
+    position: relative;
+    font-size: 0.8rem;
+    text-align: center;
+    z-index: 3;
+}
+
+.read-more a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    padding: 1em 4em 1em 1em;
+    font-family: "Metropolis-Light";
+    letter-spacing: 0.2em;
+}
+
+.read-more .text {
+    position: relative;
+    z-index: 5;
+}
+
+.read-more .circul {
+    background: linear-gradient(29deg, #2b47f0 24%, #dd4fe9 75%);
+    padding: 1.5em 1.5em;
+    border-radius: 50vw;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0em;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+}
+
+.read-more .arrow {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0.8em;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.trust-us-wrapper {
+    width: 80%;
+    margin: 10vh auto 0 auto;
+    border: 0.01em solid;
+    border-image-slice: 1;
+    border-width: 0.01em;
+    border-image-source: linear-gradient(29deg, #2b49f0 24%, #dd4fe9 75%);
+}
+
+.trust-us {
+    position: relative;
+    display: block;
+    font-size: 3em;
+    z-index: 4;
+    color: #fff;
+    font-family: "Metropolis-black";
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.carousel {
+    position: relative;
+    z-index: 3;
+    margin: 10vh 0;
+    width: 100%;
+    margin-top: 3em;
+    height: 3rem;
+}
+
+.carousel-wrapper .slick-slide:hover {
+    filter: opacity(1);
+}
+
+.carousel-wrapper .slick-slide img {
+    width: auto;
+    height: 3rem;
+    margin-right: 5rem;
+}
+
+.we-cerate {
+    padding: 10vh 10vw 0 10vw;
+}
+
+.we-cerate .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    justify-content: center;
+}
+
+.we-cerate .header .title {
+    color: #fff;
+    flex: 3;
+    font-family: "Metropolis-Bold";
+}
+
+.we-cerate .header .title span {
+    font-family: "Metropolis-light";
+}
+
+.we-cerate .header .title h2 {
+    font-family: "Metropolis-light";
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.we-cerate .header .title p {
+    font-size: 7rem;
+    min-width: 60vw;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.we-cerate .header .shape {
+    flex: 1;
+    min-width: 15vw;
+    max-width: 25vw;
+}
+
+.we-cerate .header .shape img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+@media screen and (hover: hover) {
+    .we-cerate .header .shape img {
+        display: initial;
+    }
+}
+
+.we-cerate ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Metropolis-black";
+    line-height: 1em;
+    text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
+}
+
+.we-cerate li a {
+    position: relative;
+    z-index: 4;
+    cursor: pointer;
+    display: flex;
+    transition: color 0.5s ease-in-out;
+    text-decoration: none;
+    padding-top: 1em;
+}
+
+.we-cerate li:hover {
+    color: #fff;
+    text-shadow: 1px 1px #000, 1px -1px #000, -1px 1px #000, -1px -1px #000;
+}
+
+.process {
+    color: white;
+    width: 80%;
+    margin: 7rem auto;
+}
+
+.process .header {
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+}
+
+.process .header h2 {
+    font-family: "Metropolis-Bold";
+    font-size: 1.825rem;
+    line-height: 2.5rem;
+    margin: auto 0;
+    position: relative;
+    z-index: 4;
+    letter-spacing: 0.5rem;
+}
+
+.process .mobile-screen-process {
+    display: none;
+}
+
+/* // */
+
+.we-handle-feature {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: stretch;
+}
+
+.we-handle-feature .title {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+}
+
+.we-handle-feature .title div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 4;
+}
+
+.we-handle-feature .title div img {
+    height: 2rem;
+    width: auto;
+}
+
+.we-handle-feature .title div img.colored-image {
+    display: none;
+}
+
+.we-handle-feature .title div span {
+    display: inline-block;
+    font-family: "Metropolis-Light";
+    padding: 1rem;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+    line-height: 2rem;
+    margin: 0;
+}
+
+.we-handle-feature .title div.active {
+    font-family: "Metropolis-Bold";
+    font-size: 1.6rem;
+}
+
+.we-handle-feature .title div.active img.colored-image {
+    display: inline-block;
+}
+
+.we-handle-feature .title div.active img.uncolored-image {
+    display: none;
+}
+
+.we-handle-feature .title div:hover img.colored-image {
+    display: inline-block;
+}
+
+.we-handle-feature .title div:hover img.uncolored-image {
+    display: none;
+}
+
+.we-handle-feature .title div img.colored-image {
+    display: none;
+}
+.we-handle-feature .description {
+    font-family: "Metropolis-Light";
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+    background: linear-gradient(55.38deg, #2b47f0 17.6%, #dd4fe9 75.36%);
+    flex: 1;
+    display: none;
+    padding: 4rem;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 3;
+}
+
+.we-handle-feature .description.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.we-handle-feature .description div {
+    display: flex;
+    align-items: center;
+}
+
+.we-handle-feature .description div img {
+    height: 3rem;
+    width: auto;
+    padding-right: 1rem;
+}
+
+.we-handle-feature .description span {
+    font-family: "Metropolis-Bold";
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.complex-scroll-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.complex-scroll-container .vertical-displacement {
+    opacity: 0;
+    position: relative;
+    top: 5rem;
+    background-color: #fff;
+    width: 100vw;
+    height: 1000vw;
+}
+.complex-scroll-container .scroll {
+    position: absolute;
+    width: 100vw;
+    top: 5rem;
+    left: 0;
+    overflow-x: clip;
+    overflow-y: hidden;
+}
+.complex-scroll-container .horizontal-content {
+    width: 700vw;
+    height: calc(100vh - 5rem);
+    display: flex;
+}
+.complex-scroll-container .scroll.position-fix {
+    position: fixed;
+    z-index: 4;
+    top: 5rem;
+    overflow-x: scroll;
+}
+.complex-scroll-container .detector {
+    position: absolute;
+    bottom: 100vh;
+}
+.complex-scroll-container .horizontal-content > div {
+    position: relative;
+    border-left: 0.1em solid #c4c4c480;
+    height: 100%;
+    width: 25vw;
+    background: #fff;
+    z-index: 4;
+}
+.complex-scroll-container .scroll.no-hover .horizontal-content > div {
+    pointer-events: none;
+}
+
+.complex-scroll-container .horizontal-content div .logo {
+    width: 30%;
+    position: absolute;
+    top: 15%;
+    margin-top: -10%;
+    opacity: 0;
+    transition: all 0.3s 0.1s ease-in-out, color 0s;
+    display: block;
+}
+.complex-scroll-container .horizontal-content div i,
+.complex-scroll-container .horizontal-content div h2 {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: "Metropolis-Bold";
+    position: relative;
+    display: block;
+    text-align: center;
+    left: 0%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    letter-spacing: 0.15em;
+    margin-bottom: 0.1em;
+    transition: all 0.3s 0.1s ease-in-out, color 0s;
+    color: #000;
+}
+.complex-scroll-container .horizontal-content div span {
+    font-family: "Metropolis-light";
+    position: relative;
+    display: block;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    transition: all 0.3s 0.05s ease-in-out, color 0s;
+    color: #000;
+}
+.complex-scroll-container .horizontal-content div .image {
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.complex-scroll-container .horizontal-content .start {
+    background: linear-gradient(69deg, #2b47f0 24%, #dd4fe9 75%);
+}
+.complex-scroll-container .horizontal-content .start i,
+.complex-scroll-container .horizontal-content .start h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.complex-scroll-container .horizontal-content .end {
+    background: linear-gradient(69deg, #2b47f0 24%, #dd4fe9 75%);
+}
+.complex-scroll-container .horizontal-content .end a {
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Metropolis-Bold";
+    position: relative;
+    display: block;
+    text-align: center;
+    left: 0%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    letter-spacing: 0.15em;
+    text-decoration: none;
+}
+.complex-scroll-container .horizontal-content .portfolio:hover span,
+.complex-scroll-container .horizontal-content .portfolio:active span,
+.complex-scroll-container .horizontal-content .portfolio.force span {
+    color: #fff;
+    top: 15%;
+    transform: translate(-50%, 0%);
+    transition: all 0.3s 0.05s ease-in-out;
+}
+.complex-scroll-container .horizontal-content .portfolio:hover i,
+.complex-scroll-container .horizontal-content .portfolio:active i,
+.complex-scroll-container .horizontal-content .portfolio.force i {
+    color: #fff;
+    top: 15%;
+    transition: all 0.3s 0.05s ease-in-out;
+}
+.complex-scroll-container .horizontal-content .portfolio:hover .image,
+.complex-scroll-container .horizontal-content .portfolio:active .image,
+.complex-scroll-container .horizontal-content .portfolio.force .image {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s 0.05s ease-in-out;
+    pointer-events: none;
+    width: 100%;
+}
+
+.complex-scroll-container .horizontal-content div img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.complex-scroll-container .horizontal-content div:nth-child(3):hover,
+.complex-scroll-container .horizontal-content div:nth-child(3):active,
+.complex-scroll-container .horizontal-content div:nth-child(3).force {
+    background: linear-gradient(180deg, #f2f58a 0%, #a1a603d4 100%);
+}
+@supports (-webkit-text-stroke-width: 1px) and (-webkit-text-stroke-color: #fff) {
+    .we-cerate ul a {
+        color: transparent;
+        -webkit-text-stroke-width: 0.015em;
+        -webkit-text-stroke-color: #fff;
+        text-shadow: none;
+    }
+
+    .we-cerate ul li:hover a {
+        color: transparent;
+        -webkit-text-stroke-width: 0.015em;
+        -webkit-text-stroke-color: #000;
+        color: #fff;
+        text-shadow: none;
+    }
+}
+.we-cerate .menu div {
+    position: fixed;
+    z-index: 0;
+    width: 20vw;
+    height: auto;
+    opacity: 0;
+}
+
+.we-cerate .menu div img {
+    width: 70%;
+    height: auto;
+}
+@media screen and (hover: hover) {
+    .we-cerate .img11 {
+        top: 10%;
+        left: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 2s ease-in-out alternate infinite;
+        /* background: url('../images/mobile-app-1.webp') no-repeat center center fixed; */
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1665724116/DaStudio/mobile-app-1_lwfdy3.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 15rem;
+        height: 15rem;
+    }
+    .we-cerate .img12 {
+        bottom: 10%;
+        right: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 3s ease-in-out alternate infinite;
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1665724116/DaStudio/mobile-app-2_pqluvc.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 15rem;
+        height: 16rem;
+    }
+    .we-cerate .img21 {
+        top: 17%;
+        left: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 2s ease-in-out alternate infinite;
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1665724117/DaStudio/mobile-app-3_l3bakv.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 19rem;
+        height: 11rem;
+    }
+    .we-cerate .img22 {
+        bottom: 17%;
+        right: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 3s ease-in-out alternate infinite;
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1665724117/DaStudio/mobile-app-4_xhakoe.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 19rem;
+        height: 11rem;
+    }
+    .we-cerate .img31 {
+        top: 24%;
+        left: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 2s ease-in-out alternate infinite;
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1665724117/DaStudio/mobile-app-5_ixkxzu.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 20rem;
+        height: 18rem;
+    }
+    .we-cerate .img32 {
+        bottom: 24%;
+        right: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 3s ease-in-out alternate infinite;
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1667300804/DaStudio/mobile-app-6_jvudc8.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 14rem;
+        height: 14rem;
+    }
+    .we-cerate .img41 {
+        top: 31%;
+        left: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 2s ease-in-out alternate infinite;
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1665724117/DaStudio/mobile-app-7_dfeqhg.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 15rem;
+        height: 15rem;
+    }
+    .we-cerate .img42 {
+        bottom: 31%;
+        right: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 3s ease-in-out alternate infinite;
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1665724117/DaStudio/mobile-app-8_aa9mon.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 16rem;
+        height: 13rem;
+    }
+    .we-cerate .img51 {
+        top: 38%;
+        left: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 2s ease-in-out alternate infinite;
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1666352985/DaStudio/mobile-app-9_wivhbi.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 11rem;
+        height: 12.7rem;
+    }
+    .we-cerate .img52 {
+        bottom: 38%;
+        right: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 3s ease-in-out alternate infinite;
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1666352985/DaStudio/mobile-app-10_xjf0qm.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 11rem;
+        height: 20rem;
+    }
+    .we-cerate .img61 {
+        top: 45%;
+        left: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 2s ease-in-out alternate infinite;
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1665724118/DaStudio/mobile-app-11_rswxzw.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 14rem;
+        height: 12.5rem;
+    }
+    .we-cerate .img62 {
+        bottom: 45%;
+        right: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 3s ease-in-out alternate infinite;
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1665724118/DaStudio/mobile-app-12_sbfy3v.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 12rem;
+        height: 15.5rem;
+    }
+    .we-cerate .img71 {
+        top: 50%;
+        left: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 3s ease-in-out alternate infinite;
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1665724118/DaStudio/mobile-app-12_sbfy3v.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 16rem;
+        height: 15.5rem;
+    }
+    .we-cerate .img72 {
+        bottom: 50%;
+        right: 10vw;
+        transition: all 1s ease-in-out;
+        animation: hovering 3s ease-in-out alternate infinite;
+        /* background: url('https://res.cloudinary.com/dkp6pws4e/image/upload/v1665724118/DaStudio/mobile-app-12_sbfy3v.webp') no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 14rem;
+        height: 15.5rem;
+    }
+    .carousel-wrapper .slick-slide {
+        transition: all 0.7s ease-in-out;
+    }
+}
+.techs {
+    background-color: #fff;
+    padding-top: 4em;
+    margin-top: 10em;
+}
+
+.techs h2 {
+    display: inline-block;
+    text-align: center;
+    font-family: "Metropolis-light";
+    font-size: 2em;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 4;
+    line-height: 1.5em;
+    width: 60%;
+}
+
+@supports (-webkit-background-clip: text) and
+    (-webkit-text-fill-color: transparent) {
+    .omg .slot-word .letter-wrapper > span {
+        background-image: linear-gradient(29deg, #2b47f0 24%, #dd4fe9 75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .we-cerate .header .title span {
+        background-image: linear-gradient(29deg, #2b47f0 24%, #dd4fe9 75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .we-cerate .header .title h2 {
+        background-image: linear-gradient(29deg, #2b47f0 24%, #dd4fe9 75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.footer-carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-carousel-wrapper .slick-slide img {
+    width: auto;
+    height: 3rem;
+    margin-right: 5rem;
+}

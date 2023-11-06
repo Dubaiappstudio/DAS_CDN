@@ -1,0 +1,877 @@
+/* case study */
+hr {
+    flex: 1 0 61%;
+    margin: 5vh 4vw 0 4vw;
+    color: #dedede;
+}
+.omg-website{
+    margin: auto;
+    margin-top: 5rem;
+}
+.omg{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    align-items: center;
+    font-family: 'Metropolis-Bold';
+}
+.omg h4{
+    font-size: 1.5em;
+}
+.omg .we {
+    margin-right: 0.4em;
+}
+.omg .bold{
+    
+    text-align: center;
+    position: relative;
+
+}
+
+@keyframes rolling {
+    0%,22.5%{
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+    27.5%,72.5%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    77.5%,100%{
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+}
+@keyframes rollingPuls90degs {
+    0%,22.5%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    27.5%,72%{
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+    72.5%{
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+    77.5%,100%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+}
+.omg .bold .design{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: perspective(10em) rotateX(85deg) translateZ(1em);
+    animation: rolling 3s infinite;
+    letter-spacing: 0.1em;
+    opacity: 0;
+}
+.omg .bold .develop{
+    position: relative;
+    animation: rollingPuls90degs 3s infinite;
+}
+@keyframes rolling-light-website {
+    0%,22.5%,90%,100%{
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+    27.5%,80%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+}
+@keyframes rolling-light-webapp {
+    0%,22.5%,100%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    27.5%,80%{
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+    95%{
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+}
+@keyframes rolling-light-web {
+    0%,60%,100%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    65%, 94%{
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+    95%{
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+}
+@keyframes rolling-light-mobile {
+    0%,60%{
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+    65%, 95%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    100%{
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+}
+
+.omg .light{
+    font-family: 'Metropolis-light';
+    position: relative;
+}
+.omg .light .web{
+    position: absolute;
+    top: 0;
+    left: 1.2em;
+    display: flex;
+    animation: rolling-light-web 4s infinite;
+}
+.omg .light .inner-web{
+    position: relative;
+}
+.omg .light .web .site{
+    animation: rolling-light-website 4s infinite;
+}
+.omg .light .web .app{
+    position: absolute;
+    left: 0.3em;
+    top: 0;
+    animation: rolling-light-webapp 4s infinite;
+}
+.omg .mobile{
+    animation: rolling-light-mobile 4s infinite;
+    position: relative;
+}
+.omg .slot-word{
+    display: flex;
+    font-size: 3.5em;
+    font-family: 'Metropolis-Bold';
+    overflow: hidden;
+    color: #DD4FE9;
+    margin: 0em 0.2em 0.1em 0.2em;
+    line-height: 1em;
+}
+.omg .letter-wrapper{
+    position: relative;
+}
+.omg .letter-wrapper.letter-o{
+    transform: translate(0, 0.07em);
+}
+.omg .letter-wrapper.letter-m{
+    transform: translate(0, 0.07em);
+}
+.omg .letter-wrapper.letter-g{
+    transform: translate(0, 0.07em);
+}
+.omg .letter-wrapper.letter-o.animate{
+    animation: slot-o-Rolling 3s  ease-out forwards;
+}
+.omg .letter-wrapper.letter-m.animate{
+    animation: slot-m-Rolling 3s  ease-out forwards;
+}
+.omg .letter-wrapper.letter-g.animate{
+    animation: slot-g-Rolling 3s  ease-out forwards;
+}
+@keyframes slot-m-Rolling {
+    0.001%, 2.501%, 5.001%, 7.501%, 10.001%, 12.501%, 15.001%, 17.501%, 20.001%, 22.501%, 25.001%, 27.501%, 30.001%, 32.501%{
+        transform: translate(0, -0.83em);
+    }
+            2.5%,   5%,     7.5%,    10%,    12.5%,   15%,     17.5%,   20%,     22.5%,   25%,     27.5%,   30%,     32.5%,   35%{
+        transform: translate(0, 1.57em);
+    }
+
+    35.001%, 40.001%, 45.001%, 50.001%{
+        transform: translate(0, -0.83em);
+    }
+             40%,     45%,     50%,     55%{
+        transform: translate(0, 1.57em);
+    }
+
+    55.001%, 65.001%, 75.001% {
+        transform: translate(0, -0.83em);
+    }
+             65%,     75%,    85%,   87%{
+        transform: translate(0, 1.57em);
+    }
+
+    90%{
+        transform: translate(0, 1em);
+    }
+    92.5%{
+        transform: translate(0, 0.5em);
+    }
+    95%{
+        transform: translate(0, 0.1em);
+    }
+    100%{
+        transform: translate(0, 0.07em);
+    }
+    /* 90%{
+        transform: translate(0, 0.1em);
+    }
+    92.5%{
+        transform: translate(0, 0.35em);
+    }
+    95%, 100%{
+        transform: translate(0, 0.07em);
+    } */
+}
+@keyframes slot-o-Rolling {
+    0.001%, 2.501%, 5.001%, 7.501%{
+        transform: translate(0, -0.83em);
+    }
+            2.5%,   5%,     7.5%,    10%{
+        transform: translate(0, 1.57em);
+    }
+    
+    10.001%, 15.001%, 20.001%{
+        transform: translate(0, -0.83em);
+    }
+             15%,     20%,     25%{
+        transform: translate(0, 1.57em);
+    }
+
+    25.001%, 35.001%, 45.001%, 55.001% {
+        transform: translate(0, -0.83em);
+    }
+             35%,     45%,     55%,   65%{
+        transform: translate(0, 1.57em);
+    }
+    67.5%{
+        transform: translate(0, 1.58em);
+    }
+    70%{
+        transform: translate(0, 1.3em);
+    }
+    72.5%{
+        transform: translate(0, 1em);
+    }
+    75%{
+        transform: translate(0, 0.5em);
+    }
+    77.5%{
+        transform: translate(0, -0.2em);
+    }
+    80%, 100%{
+        transform: translate(0, 0.07em);
+    }
+}
+@keyframes slot-g-Rolling {
+    0.001%, 2.501%{
+        transform: translate(0, -0.83em);
+    }
+            2.5%,   5%{
+        transform: translate(0, 1.57em);
+    }
+    
+    5.001%{
+        transform: translate(0, -0.83em);
+    }
+             10%{
+        transform: translate(0, 1.57em);
+    }
+
+    10.001%{
+        transform: translate(0, -0.83em);
+    }
+             20%{
+        transform: translate(0, 1.57em);
+    }
+
+    20.001%{
+        transform: translate(0, -0.83em);
+    }
+             25%{
+        transform: translate(0, 1.57em);
+    }
+
+    25.001%, 27.501%{
+        transform: translate(0, -0.83em);
+    }
+            27.5%,   30%{
+        transform: translate(0, 1.57em);
+    }
+
+    30.001%{
+        transform: translate(0, -0.83em);
+    }
+             35%{
+        transform: translate(0, 1.57em);
+    }
+
+    35.001%{
+        transform: translate(0, -0.83em);
+    }
+             45%{
+        transform: translate(0, 1.57em);
+    }
+
+    45.001%{
+        transform: translate(0, -0.83em);
+    }
+             50%{
+        transform: translate(0, 1.57em);
+    }
+
+    50.001%, 52.501%{
+        transform: translate(0, -0.83em);
+    }
+            52.5%,   55%{
+        transform: translate(0, 1.57em);
+    }
+
+    55.001%{
+        transform: translate(0, -0.83em);
+    }
+             60%{
+        transform: translate(0, 1.57em);
+    }
+
+    60.001%{
+        transform: translate(0, -0.83em);
+    }
+             70%{
+        transform: translate(0, 1.57em);
+    }
+
+    70.001%{
+        transform: translate(0, -0.83em);
+    }
+             85%{
+        transform: translate(0, 1.57em);
+    }
+
+    85.001%{
+        transform: translate(0, -0.83em);
+    }
+             95%{
+        transform: translate(0, 1.57em);
+    }
+    96%{
+        transform: translate(0, 0.75em);
+    }
+    97%{
+        transform: translate(0, 0.0em);
+    }
+    98%{
+        transform: translate(0, -0.1em);
+    }
+    99%{
+        transform: translate(0, 0.3em);
+    }
+    100%{
+        transform: translate(0, 0.07em);
+        /* transform: translate(0, 0.19em); */
+    }
+}
+.omg .letter-wrapper .mask{
+    position: absolute;
+    opacity: 0.7;
+}
+.omg .letter-wrapper .upper-mask{
+    top: -0.8em;
+    width: 0.81em;
+    height: 1em;
+}
+.omg .letter-wrapper .lower-mask{
+    left: 0;
+    top: 0.8em;
+    width: 0.81em;
+    height: 1em;
+}
+
+.omg .letter-wrapper .upper-mask2{
+    top: -1.6em;
+    width: 0.81em;
+    height: 1em;
+}
+.omg .letter-wrapper .lower-mask2{
+    left: 0;
+    top: 1.6em;
+    width: 0.81em;
+    height: 1em;
+}
+.omg .slot-word .letter-wrapper > span {
+    color: #2B47F0;
+}
+.omg-p{
+    color: white;
+    position: relative;
+    z-index: 3;
+    font-family: 'Metropolis-Light';
+    margin: 3em 10vw;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6em;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+    .omg .slot-word .letter-wrapper > span{ 
+        background-image: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+
+}
+
+.web-development {
+   background-color: #fff;
+   position: relative;
+   z-index: 3;
+   padding: 6rem 0rem;
+   display: flex;
+   margin-bottom: -2px;  
+}
+.flex-box{
+    flex: 10;
+}
+
+.padding {
+    flex: 1;
+}
+
+.web-development .about-service{
+    flex: 6;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.web-development .about-service .title {
+    flex: 1 0 40%;
+    min-width: 31vmax;
+    margin-bottom: 5rem;
+    padding-right: 1vw;
+}
+
+.web-development .about-service .title img{
+    display: block;
+    width: 60%;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+.web-development .about-service .description {
+    flex: 1 0 50%;
+    min-width: 31vmax;
+    margin-right: 2rem;
+}
+
+.web-development .about-service .description div{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.web-development .about-service .description span{
+    font-family: 'Metropolis-Bold';
+    font-size: 5rem;
+    /* line-height: 3rem; */
+    margin-top: 0px;
+}
+.web-development .about-service .description .light{
+    font-family: 'Metropolis-Light' !important;
+}
+
+.web-development .about-service .description p{
+    font-family: 'Metropolis-Light';
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0px;
+    margin-top: 2rem;
+    line-height: 2em;
+}
+.web-development .about-service .description h3{
+    font-family: 'Metropolis-Light';
+    background-image: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.cms{
+    background: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    color: #fff;
+    position: relative;
+    padding: 5rem 0;
+    display: flex;
+    z-index: 3;
+}
+
+.cms .team span{
+    font-family: 'Metropolis-Light';
+    font-size: 1.3rem;
+    line-height: 2rem;
+    /* position: relative; */
+    z-index: 4;
+    /* left: 50%;
+    transform: translate(-50%,0%); */
+    display: inline-block;
+    margin-bottom: 35px;
+    /* text-align: center; */
+}
+.cms .team h1, .cms .team h2, .cms .team h3{
+    font-family: 'Metropolis-Bold';
+    font-size: 3rem;
+    line-height: 4rem;
+    z-index: 4;
+    display: inline-block;
+}
+
+.cms .team .icon {
+    width: 60px;
+    height: 65px;
+    position: relative;
+    z-index: 4;
+    margin: auto;
+    display: block;
+    margin-bottom: 35px;
+    background-image: url('/images/shopify_icon.svg');
+}
+.cms .team{
+    display: flex;
+    /* justify-content: center; */
+}
+.cms .team .content-body h2, .cms .team .content-body h1{
+    width: 90%;
+}
+.cms .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cms .row .item{
+    width: 35%;
+    padding: 50px;
+    font-size: 18px;
+}
+.cms .row .item p{
+    font-family: 'Metropolis-Light';
+    line-height: 2rem;
+    color: white;
+}
+.cms .row .item span{
+    font-family: 'Metropolis-Bold';
+    margin-bottom: 18px;
+    display: block;
+}
+.overide{
+    background: white; 
+    color:black;
+    padding-top: 0;
+}
+.overide img {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+}
+.overide .right-image{
+    margin:0 0 0 3rem !important;
+}
+.overide .left-image{
+    margin:0 3rem 0 0 !important;
+}
+.for-you{
+    background-color: #fff;
+    font-family: 'Metropolis-Light';
+    overflow: hidden;
+    padding-top: 7rem;
+}
+.for-you .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.for-you .item-1{
+    width: 15%;
+    line-height: 2.5rem;
+    font-family: 'Metropolis-Bold';
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.for-you .item-2{
+    width: 60%;
+}
+.for-you ul li{
+    padding-left: 8px;
+}
+
+
+.for-you ul{
+    list-style: none;
+    list-style-image: url(../images/right-arrow.webp);
+    width: 65%;
+    line-height: 2rem;
+    font-family: 'Metropolis-Light';
+    padding: 0;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.for-you ul li {
+    margin-top: 2rem;
+    position: relative;
+    z-index: 4;
+    font-size: 1.2rem;
+}
+
+.buy-shop{
+    display: flex;
+    background: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    align-items: center;
+    color: #fff;
+    position: relative;
+    padding: 3rem 0;
+}
+
+.buy-shop .shop{
+    display: flex;
+    width: 100%;
+}
+
+.buy-shop svg.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.buy-shop svg.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.buy-shop .shop p{
+    flex: 4;
+    font-family: 'Metropolis-Light';
+    font-size: 1rem;
+    line-height: 2rem;
+    position: relative;
+    z-index: 4;
+    /* margin: 2rem 2rem; */
+}
+
+.buy-shop .shop p span{
+    font-size: 1.3rem;
+
+}
+
+.buy-shop .shop p span a{
+    font-family: 'Metropolis-bold';
+    color: white;
+    text-decoration: none;}
+
+.buy-shop .shop img{
+    /* flex: 1; */
+    /* width: 20rem; */
+    height: auto;
+    max-width: 50vw;
+    position: relative;
+    z-index: 4;
+    margin: auto;
+    margin-top: -7rem;
+}
+
+.buy-shop .stroke {
+    width: 90%;
+    position: absolute; 
+}
+.buy-shop .card{
+    width: 70%;
+    padding-left: 2rem;
+    line-height: 2em;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+.buy-shop .card p{
+    width: 80%
+}
+
+.buy-shop .card-image{
+    width: 30%;
+   
+}
+
+/* 990px and below */
+@media screen and (max-width: 1400px) {
+    .buy-shop .card p{
+        width: auto;
+    }
+    .overide .team span{
+        font-size: initial !important;
+    }
+    .overide .team h3{
+        font-size: 2rem !important;
+    }
+    .overide{
+        padding-bottom: 3rem !important;
+    }
+    .buy-shop .card{
+        padding-left: 8rem;
+    }
+    .omg{
+        font-size: 2rem;
+    }
+    .omg-website{
+        margin-top: 8rem;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .get-quote,.lang{
+        display: block !important;
+    }
+    .con{
+        display: inline-block !important;
+    }
+    .navbar,.contact-btn{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .cms .team h1 , .cms .team h2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .web-development  .about-service .description{
+        text-align: center;
+    }
+    .web-development  .about-service .title{
+        margin-bottom: unset;
+        margin-top: 5rem;
+    }
+    .cms .team{
+        align-items: center;
+    }
+    .overide img{
+        width: 50%;
+    }
+    .flex-col{
+        flex-direction: column;
+    }
+    .flex-col-reverse{
+        flex-direction: column-reverse;
+    }
+    .cms{
+        padding:0 ;
+    }
+    .cms .team .content-body{
+        width: auto;
+        margin: 0;
+    }
+    .cms .wrapper .inner-border-fixer img{
+        margin: auto;
+        display: block;
+    }
+    
+    .cms .wrapper .inner-border-fixer h5{
+        text-align: center;
+    }
+    
+    .cms .wrapper .inner-border-fixer p{
+        text-align: center;
+    }
+
+    .cms .wrapper .inner-border-fixer .anchor-wrapper{
+        display:table;
+        margin: auto;
+    }
+    .cms .row .item{
+        width: auto;
+        padding: 16px 35px;
+        font-size: 1em;
+    }
+    .for-you .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .for-you .row .item-1 img{
+        width: 35%;
+    } 
+    .for-you .row .item-1{
+        width: 60%;
+    }
+    .for-you .item-2{
+        width: auto;
+    }
+    .buy-shop .shop{
+        flex-wrap: wrap;
+    }
+    .buy-shop .shop img{
+        width: 20rem;
+    }
+    .buy-shop .shop{
+        justify-content: center;
+    }
+    .buy-shop .card, .buy-shop .card-image{
+        width:auto;
+    }
+    .buy-shop .card{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .overide .right-image{
+        margin:0 !important;
+    }
+    .overide .left-image{
+        margin:0 !important;
+    }
+    
+    .for-you{
+        padding-top: 9rem;
+    }
+    .buy-shop{
+        padding: 3rem 3rem;
+    }
+    .buy-shop{
+        flex-direction: column;
+    }
+
+    .buy-shop .content{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .cms .wrapper .inner-border-fixer .wordpress,
+    .cms .wrapper .inner-border-fixer .shopify{
+        padding: 0;
+    }
+    .web-development .about-service .title h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        word-wrap: break-word;
+    }
+
+    .web-development .about-service .description p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+        white-space: normal;
+    }
+}

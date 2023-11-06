@@ -1,0 +1,717 @@
+@font-face {
+    font-family: "Metropolis-Bold";
+    src: url(../fonts/metropolis/Metropolis-Bold.otf);
+    font-display: swap;
+}
+@font-face {
+    font-family: "Metropolis-Light";
+    src: url(../fonts/metropolis/Metropolis-Light.otf);
+    font-display: swap;
+}
+
+html {
+    font-size: 16px;
+}
+body{
+    margin: 0;
+}
+
+.fa-solid, .fas{
+    font-size: 5rem;
+    color: #FF9085;
+}
+.bg{
+    width: 100vw;
+}
+
+.bg img{
+    width: 100%;
+    height: auto;
+}
+
+.black-bg {
+    background-color: #222222;
+    color: #fff;
+    padding-bottom: 20vh;
+}
+
+.black-bg .header-img-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -10vh;
+    padding: 0 2vw;
+}
+
+.black-bg .header-img-wrapper div{
+    flex: 1;
+    min-width: 35vh;
+    padding: 1vw;
+}
+
+.black-bg .header-img-wrapper div img{
+    width: 100%;
+    height: auto;
+}
+
+.black-bg .virtual-programming{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    padding: 0 20vw;
+    font-size: 2rem;
+    font-family: 'Metropolis-Light';
+    line-height: 4.5rem;
+}
+
+.black-bg .virtual-programming .description{
+    flex: 1 0 100%;
+}
+
+.black-bg .virtual-programming .detail{
+    flex: 1;
+    margin: 0;
+    margin-top: 2vh;
+}
+
+.black-bg .virtual-programming .detail.wide{
+    flex: 3;
+}
+
+
+.black-bg .virtual-programming .detail{
+    flex: 2;
+}
+
+.black-bg .virtual-programming .detail span{
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.black-bg .virtual-programming .detail p {
+    margin: 0;
+}
+
+.black-bg .virtual-programming .detail a{
+    color:white;
+}
+
+.black-bg .image-list {
+    width: 100%;
+    margin: 3rem 0%;
+}
+
+.black-bg .image-list div{
+    width: 33%;
+    display: inline-block;
+}
+
+.black-bg .image-list div img{
+    width: 100%;
+    height: auto;
+}
+.black-bg .about-lets-connect {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Metropolis-Bold';
+    padding: 0 14vw;
+    line-height: 4rem;
+}
+
+.black-bg .about-lets-connect h2{
+    text-align: center;
+    line-height: 8rem;
+    font-size: 6rem;
+}
+.black-bg .about-lets-connect h2.left{
+    text-align: initial
+}
+
+.black-bg .about-lets-connect span{
+    color: #222222;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.black-bg .about-lets-connect p {
+    font-family: 'Metropolis-Light';
+}
+
+.black-bg .about-lets-connect .two-col{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Metropolis-Light';
+}
+
+.black-bg .about-lets-connect .two-col ul{
+    flex: 1 0 30vw;
+    list-style: none;
+    line-height: initial;
+    padding: 0;
+}
+
+.black-bg .about-lets-connect .two-col ul li {
+    padding-top: 3rem;
+}
+
+.black-bg .about-lets-connect .two-col div{
+    flex: 1 0 30vw;
+}
+
+.black-bg .about-lets-connect .two-col div img{
+    width: 100%;
+    height: auto;
+}
+
+
+.black-bg .challenges{
+    padding: 0 14vw;
+    font-family: 'Metropolis-Bold';
+}
+
+.black-bg .challenges h2{
+    font-size: 6rem;
+}
+
+.black-bg .challenges p{
+    font-family: 'Metropolis-light';
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+.black-bg .challenges .description{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+}
+
+.black-bg .challenges .description .image {
+    flex: 6;
+    min-width: 30vh
+}
+
+.black-bg .challenges .description .image img{
+    width: 100%;
+    height: auto;
+}
+
+.black-bg .challenges .description .text {
+    flex: 7;
+    padding: 0 3vw;
+}
+
+.black-bg .challenges .description .text h2 {
+    margin: 2vh 0;
+}
+
+.black-bg .challenges .description .text ul{
+    padding: 0;
+    list-style: none;
+    font-family: 'Metropolis-light';
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.black-bg .challenges .description .text ul li{
+    padding-top: 0.5vh;
+}
+
+.black-bg .challenges .description .text ul li::before{ 
+    content: "\2022";
+    color: yellow;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+.black-bg .processes{
+    width: 70%;
+    margin: 10vh auto;
+    font-family: 'Metropolis-light';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.black-bg .processes h2{
+    font-family: 'Metropolis-Bold';
+    text-align: center;
+    font-size: 5rem;
+}
+
+.black-bg .processes .process{
+    display: inline-block;
+    border: solid 1px white;
+    border-radius: 1rem;
+    padding: 2vw;
+    font-size: 3rem;
+}
+
+.black-bg .processes .process .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.black-bg .processes .process .container .left{
+    flex: 1;
+}
+
+.black-bg .processes .process .container .right{
+    flex: 1;
+}
+
+.black-bg .processes .process .container span{
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.black-bg .processes .process .container span.bold{
+    font-family: 'Metropolis-Bold';
+}
+
+.black-bg .processes .process .container ul{
+    list-style: none;
+    font-size: 1.6rem;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.black-bg .processes .process .container ul li{
+    margin-bottom: 1vh;
+}
+
+.black-bg .user-flow {
+    padding: 0 8vw;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Metropolis-Light';
+    line-height: 2rem;
+}
+
+.black-bg .user-flow h2{
+    font-family: 'Metropolis-Bold';
+    font-size: 5rem;
+    line-height: 6rem;
+}
+
+.black-bg .user-flow .templates {
+    margin: 7vh 0;
+    columns: 4 20vh;
+}
+
+
+.black-bg .user-flow .templates .template {
+   
+}
+
+.min-width{
+    min-width: 30vh
+}
+
+.vertical-center{
+    position: relative;
+    top: 50%;
+    transform: translate(0 ,-50%);
+}
+
+
+.black-bg .user-flow .templates .template img{
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+
+
+.black-bg .image-font{
+    text-align: center;
+    font-family: 'Metropolis-Bold';
+}
+
+.black-bg .image-font img{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.black-bg .image-font h2{
+    font-size: 4rem;
+}
+
+.black-bg .image-font p{
+    font-size: 1.5rem;
+    font-family: 'Metropolis-Light';
+    width: 60%;
+    margin: auto;
+}
+
+.black-bg .home{
+    padding: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.black-bg .home .section{
+    flex: 1;
+    min-width: 30vh;
+    font-family: 'Metropolis-Bold';
+    margin-top: 20vh;
+}
+
+.black-bg .home .section .description{
+    width: 85%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.black-bg .home .section .description h2{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.black-bg .home .section .description p{
+    font-family: 'Metropolis-Light';
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.black-bg .home .section img{
+    width: 100%;
+    height: auto;
+}
+
+.black-bg .red-bg{
+    background-color: #Df697a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5vh 10vw;
+    font-family: 'Metropolis-Bold';
+}
+
+.black-bg .red-bg .section{
+    flex: 1 0 40%;
+}
+
+.black-bg .red-bg .section p{
+    font-family: 'Metropolis-Light';
+}
+
+.black-bg .red-bg .section  p > span{
+    font-family: 'Metropolis-Bold';
+}
+
+.black-bg .red-bg .section img{
+    width: 80%;
+    height: auto;
+}
+
+.black-bg .red-bg .section > span{
+    font-size: 5rem;
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.black-bg .red-bg .section span small{
+    display: block;
+    font-size: 1rem;
+    font-family: 'Metropolis-Light';
+    white-space: nowrap;
+    margin: auto;
+    width: 50%;
+}
+
+.black-bg .branding {
+    margin: 10vh 0;
+    padding: 30vh 7vw;
+    position: relative;
+}
+
+.black-bg .branding h2{
+    MARGIN: 0;
+    position: relative;
+    z-index: 3;
+    font-family: 'Metropolis-Bold';
+    font-size: 5rem;
+}
+
+.black-bg .branding .mask{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    margin: 0;
+    transform: translate(0, -50%);
+    font-family: 'Metropolis-Bold';
+    font-size: 18vw;
+    color: #222;
+    text-shadow: -1px -1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, 1px 1px 0 #666;
+}
+
+
+.black-bg .our-branding {
+    font-family: 'Metropolis-light';
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8vw;
+    padding: 0 5vw;
+    background-color: #222;
+    z-index: 2;
+    position: relative;
+    justify-content: space-around;
+}
+
+.black-bg .our-branding .brand{
+    flex: 1 0 40%;
+    min-width: 30vh;
+    max-width: 70vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    padding: 1vw;
+}
+
+.black-bg .our-branding .brand.color-palette{
+    text-align: left;
+}
+
+.black-bg .our-branding .brand.color-palette .palette{
+    display: flex;
+    height: 15%;
+    margin: 2vh 0;
+}
+
+.black-bg .our-branding .brand.color-palette .palette div:nth-child(1){
+    flex: 1;
+    background-color: #50B0A6;
+}
+.black-bg .our-branding .brand.color-palette .palette div:nth-child(2){
+    flex: 1;
+    background-color: #014364;
+}
+.black-bg .our-branding .brand.color-palette .palette div:nth-child(3){
+    flex: 1;
+    background-color: #EAA024;
+}
+.black-bg .our-branding .brand.color-palette .palette div:nth-child(4){
+    flex: 1;
+    background-color: #F3566E;
+}
+.black-bg .our-branding .brand.color-palette .palette div:nth-child(5){
+    flex: 1;
+    background-color: #fff;
+}
+
+.black-bg .our-branding .brand.color-palette .alph{
+    margin-top: 2vh;
+    display: flex;
+}
+
+.black-bg .our-branding .brand.color-palette .alph > p{
+    flex: 1;
+    font-family: 'Metropolis-bold';
+    font-size: 4rem;
+    margin: 2vh 0px;
+    margin-right: 1vw;
+}
+
+.black-bg .our-branding .brand.color-palette .alph > div {
+    flex: 3;
+}
+
+.black-bg .our-branding .brand.color-palette .alph > div p:nth-child(1){
+    font-family: 'Metropolis-bold';
+}
+
+.black-bg .our-branding .brand table {
+    border-collapse: collapse;
+}
+
+.black-bg .our-branding .brand table td {
+    padding-bottom: 1vh;
+    line-height: 1.5rem;
+}
+
+.black-bg .our-branding .brand table td h2{
+    font-family: 'Metropolis-bold';
+}
+
+.black-bg .our-branding .brand table tr td:nth-child(2) {
+    padding-left: 2vh;
+}
+
+.black-bg .our-branding .brand table tr td button {
+    color: white;
+    background-color: #50B0A6;
+    border: none;
+    padding: 1vw;
+}
+
+.black-bg .our-branding .brand table tr td a {
+    margin: 0 1vw;
+    color: #fff;
+    letter-spacing: 0.1rem;
+}
+
+.black-bg .our-branding .brand.mascots {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.black-bg .our-branding .brand.mascots h2 {
+    font-family: 'Metropolis-Bold';
+}
+
+.black-bg .our-branding .brand.mascots p {
+    line-height: 1.5rem;
+}
+
+.black-bg .our-branding .brand img {
+    width: 100%;
+    height: auto;
+}
+
+.black-bg .mockups{
+    margin-top: 20vh;
+}
+
+.black-bg .mockups h2{
+    font-family: 'Metropolis-Bold';
+    font-size: 6vw;
+    text-align: center;
+}
+
+.black-bg .mockups h2 span{
+    color: #222;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.black-bg .mockups .grid{
+    columns: 3 25vh;
+}
+
+.black-bg .mockups .grid div img{
+    width: 100%;
+    height: auto;
+}
+
+
+.black, .black .our-branding{
+    background-color: #181818;
+    padding-top: 5vh;
+    color: #fff;
+    font-family: 'Metropolis-Bold';
+    text-align: center;
+}
+
+
+.black p{
+    font-family: 'Metropolis-Light';
+    width: 70%;
+    margin: auto;
+    padding: 5vh 0;
+}
+
+.black .our-branding .brand{
+    padding: 0;
+}
+
+.black.single-image .our-branding .brand{
+    flex: 1 0 100%;
+    max-width: initial;
+    margin-bottom: 3vh;
+}
+
+
+
+@media screen and (max-width: 990px ){
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 672px ){
+    html {
+        font-size: 10px;
+    }
+    .header-img-wrapper{
+        margin-top: -5vh;
+    }
+    .header-img-wrapper div{
+        flex: 1;
+        padding: 0.5vw;
+    }
+
+
+    .black-bg .challenges h2{
+        font-size: 3rem;
+    }
+
+    .black-bg .user-flow h2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .black-bg .home .section .description h2{
+        font-size: 3rem
+    }
+
+    .black-bg .about-lets-connect h2{
+        line-height: 5rem;
+        font-size: 4rem;
+    }
+
+    .black-bg .virtual-programming{
+        padding: 0 10vw;
+     }
+
+     .black-bg .virtual-programming .detail{
+        flex: 1 0 100%;
+    }
+
+    .black-bg .image-list {
+        margin: 3vh 0;
+    }
+
+    .black-bg .image-list div{
+        display: inline;
+    }
+
+    .black-bg .about-lets-connect {
+        color: white;
+        font-family: 'Metropolis-Bold';
+        font-size: 1.5rem;
+        padding: 0 2vw;
+        line-height: 3rem;
+    }
+
+    .black-bg .about-lets-connect .two-col ul{
+        padding: 0;
+    }
+     
+}
+
+@media screen and (max-width: 300px ){
+    html {
+        font-size: 9px;
+    }
+
+    .black-bg .about-lets-connect .two-col ul{
+       flex-basis: 100%;
+    }
+
+    .black-bg .about-lets-connect .two-col div{
+        flex-basis: 100%;
+     }
+
+     .red-bg .section > span {
+        line-height: 3rem;
+    }
+}

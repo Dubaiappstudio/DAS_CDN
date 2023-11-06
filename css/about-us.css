@@ -1,0 +1,561 @@
+/* case study */
+
+.omg-website{
+    margin: auto;
+}
+.omg{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    align-items: center;
+    font-family: 'Metropolis-Bold';
+}
+.omg .we {
+    margin-right: 0.4em;
+}
+.omg .bold{
+    
+    text-align: center;
+    position: relative;
+
+}
+
+@keyframes rolling {
+    0%,22.5%{
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+    27.5%,72.5%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    77.5%,100%{
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+}
+@keyframes rollingPuls90degs {
+    0%,22.5%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    27.5%,72%{
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+    72.5%{
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+    77.5%,100%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+}
+.omg .bold .design{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: perspective(10em) rotateX(85deg) translateZ(1em);
+    animation: rolling 3s infinite;
+    letter-spacing: 0.1em;
+    opacity: 0;
+}
+.omg .bold .develop{
+    position: relative;
+    animation: rollingPuls90degs 3s infinite;
+}
+@keyframes rolling-light-website {
+    0%,22.5%,90%,100%{
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+    27.5%,80%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+}
+@keyframes rolling-light-webapp {
+    0%,22.5%,100%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    27.5%,80%{
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+    95%{
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+}
+@keyframes rolling-light-web {
+    0%,60%,100%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    65%, 94%{
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+    95%{
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+}
+@keyframes rolling-light-mobile {
+    0%,60%{
+        transform: perspective(10em) rotateX(90deg) translateZ(1em);
+        opacity: 0;
+    }
+    65%, 95%{
+        transform: perspective(10em) rotateX(0deg) translateZ(0em);
+        opacity: 1;
+    }
+    100%{
+        transform: perspective(10em) rotateX(-90deg) translateZ(1em);
+        opacity: 0;
+    }
+}
+
+.omg .light{
+    font-family: 'Metropolis-light';
+    position: relative;
+}
+.omg .light .web{
+    position: absolute;
+    top: 0;
+    left: 1.2em;
+    display: flex;
+    animation: rolling-light-web 4s infinite;
+}
+.omg .light .inner-web{
+    position: relative;
+}
+.omg .light .web .site{
+    animation: rolling-light-website 4s infinite;
+}
+.omg .light .web .app{
+    position: absolute;
+    left: 0.3em;
+    top: 0;
+    animation: rolling-light-webapp 4s infinite;
+}
+.omg .mobile{
+    animation: rolling-light-mobile 4s infinite;
+    position: relative;
+}
+.omg .slot-word{
+    display: flex;
+    font-size: 3.5em;
+    font-family: 'Metropolis-Bold';
+    overflow: hidden;
+    color: #DD4FE9;
+    margin: 0em 0.2em 0.1em 0.2em;
+    line-height: 1em;
+}
+.omg .letter-wrapper{
+    position: relative;
+}
+.omg .letter-wrapper.letter-o{
+    transform: translate(0, 0.07em);
+}
+.omg .letter-wrapper.letter-m{
+    transform: translate(0, 0.07em);
+}
+.omg .letter-wrapper.letter-g{
+    transform: translate(0, 0.07em);
+}
+.omg .letter-wrapper.letter-o.animate{
+    animation: slot-o-Rolling 3s  ease-out forwards;
+}
+.omg .letter-wrapper.letter-m.animate{
+    animation: slot-m-Rolling 3s  ease-out forwards;
+}
+.omg .letter-wrapper.letter-g.animate{
+    animation: slot-g-Rolling 3s  ease-out forwards;
+}
+@keyframes slot-m-Rolling {
+    0.001%, 2.501%, 5.001%, 7.501%, 10.001%, 12.501%, 15.001%, 17.501%, 20.001%, 22.501%, 25.001%, 27.501%, 30.001%, 32.501%{
+        transform: translate(0, -0.83em);
+    }
+            2.5%,   5%,     7.5%,    10%,    12.5%,   15%,     17.5%,   20%,     22.5%,   25%,     27.5%,   30%,     32.5%,   35%{
+        transform: translate(0, 1.57em);
+    }
+
+    35.001%, 40.001%, 45.001%, 50.001%{
+        transform: translate(0, -0.83em);
+    }
+             40%,     45%,     50%,     55%{
+        transform: translate(0, 1.57em);
+    }
+
+    55.001%, 65.001%, 75.001% {
+        transform: translate(0, -0.83em);
+    }
+             65%,     75%,    85%,   87%{
+        transform: translate(0, 1.57em);
+    }
+
+    90%{
+        transform: translate(0, 1em);
+    }
+    92.5%{
+        transform: translate(0, 0.5em);
+    }
+    95%{
+        transform: translate(0, 0.1em);
+    }
+    100%{
+        transform: translate(0, 0.07em);
+    }
+    /* 90%{
+        transform: translate(0, 0.1em);
+    }
+    92.5%{
+        transform: translate(0, 0.35em);
+    }
+    95%, 100%{
+        transform: translate(0, 0.07em);
+    } */
+}
+@keyframes slot-o-Rolling {
+    0.001%, 2.501%, 5.001%, 7.501%{
+        transform: translate(0, -0.83em);
+    }
+            2.5%,   5%,     7.5%,    10%{
+        transform: translate(0, 1.57em);
+    }
+    
+    10.001%, 15.001%, 20.001%{
+        transform: translate(0, -0.83em);
+    }
+             15%,     20%,     25%{
+        transform: translate(0, 1.57em);
+    }
+
+    25.001%, 35.001%, 45.001%, 55.001% {
+        transform: translate(0, -0.83em);
+    }
+             35%,     45%,     55%,   65%{
+        transform: translate(0, 1.57em);
+    }
+    67.5%{
+        transform: translate(0, 1.58em);
+    }
+    70%{
+        transform: translate(0, 1.3em);
+    }
+    72.5%{
+        transform: translate(0, 1em);
+    }
+    75%{
+        transform: translate(0, 0.5em);
+    }
+    77.5%{
+        transform: translate(0, -0.2em);
+    }
+    80%, 100%{
+        transform: translate(0, 0.07em);
+    }
+}
+@keyframes slot-g-Rolling {
+    0.001%, 2.501%{
+        transform: translate(0, -0.83em);
+    }
+            2.5%,   5%{
+        transform: translate(0, 1.57em);
+    }
+    
+    5.001%{
+        transform: translate(0, -0.83em);
+    }
+             10%{
+        transform: translate(0, 1.57em);
+    }
+
+    10.001%{
+        transform: translate(0, -0.83em);
+    }
+             20%{
+        transform: translate(0, 1.57em);
+    }
+
+    20.001%{
+        transform: translate(0, -0.83em);
+    }
+             25%{
+        transform: translate(0, 1.57em);
+    }
+
+    25.001%, 27.501%{
+        transform: translate(0, -0.83em);
+    }
+            27.5%,   30%{
+        transform: translate(0, 1.57em);
+    }
+
+    30.001%{
+        transform: translate(0, -0.83em);
+    }
+             35%{
+        transform: translate(0, 1.57em);
+    }
+
+    35.001%{
+        transform: translate(0, -0.83em);
+    }
+             45%{
+        transform: translate(0, 1.57em);
+    }
+
+    45.001%{
+        transform: translate(0, -0.83em);
+    }
+             50%{
+        transform: translate(0, 1.57em);
+    }
+
+    50.001%, 52.501%{
+        transform: translate(0, -0.83em);
+    }
+            52.5%,   55%{
+        transform: translate(0, 1.57em);
+    }
+
+    55.001%{
+        transform: translate(0, -0.83em);
+    }
+             60%{
+        transform: translate(0, 1.57em);
+    }
+
+    60.001%{
+        transform: translate(0, -0.83em);
+    }
+             70%{
+        transform: translate(0, 1.57em);
+    }
+
+    70.001%{
+        transform: translate(0, -0.83em);
+    }
+             85%{
+        transform: translate(0, 1.57em);
+    }
+
+    85.001%{
+        transform: translate(0, -0.83em);
+    }
+             95%{
+        transform: translate(0, 1.57em);
+    }
+    96%{
+        transform: translate(0, 0.75em);
+    }
+    97%{
+        transform: translate(0, 0.0em);
+    }
+    98%{
+        transform: translate(0, -0.1em);
+    }
+    99%{
+        transform: translate(0, 0.3em);
+    }
+    100%{
+        transform: translate(0, 0.07em);
+        /* transform: translate(0, 0.19em); */
+    }
+}
+.omg .letter-wrapper .mask{
+    position: absolute;
+    opacity: 0.7;
+}
+.omg .letter-wrapper .upper-mask{
+    top: -0.8em;
+    width: 0.81em;
+    height: 1em;
+}
+.omg .letter-wrapper .lower-mask{
+    left: 0;
+    top: 0.8em;
+    width: 0.81em;
+    height: 1em;
+}
+
+.omg .letter-wrapper .upper-mask2{
+    top: -1.6em;
+    width: 0.81em;
+    height: 1em;
+}
+.omg .letter-wrapper .lower-mask2{
+    left: 0;
+    top: 1.6em;
+    width: 0.81em;
+    height: 1em;
+}
+.omg .slot-word .letter-wrapper > span {
+    color: #2B47F0;
+}
+.omg-p{
+    color: white;
+    position: relative;
+    z-index: 3;
+    font-family: 'Metropolis-Light';
+    margin: 3em 10vw;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6em;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+    .omg .slot-word .letter-wrapper > span{ 
+        background-image: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+
+    .we-cerate .header .title span{
+        background-image: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+
+}
+
+.about-us {
+   background-color: #fff;
+   position: relative;
+   z-index: 3;
+   padding: 6rem 0rem;
+   display: flex;
+   display: flex;
+   margin-bottom: -2px;
+}
+
+.about-us .padding {
+    flex: 1;
+}
+
+.about-us .about-service{
+    flex: 10;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us .about-service{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us .about-service .title {
+    flex: 1 0 38%;
+    min-width: 31vmax;
+    margin-top: 2rem;
+    padding-right: 1vw;
+}
+
+.about-us .about-service .title img{
+    display: block;
+    width: 70%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.about-us .about-service .description-wraper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-us .about-service .description-wraper .description {
+    flex: 1 0;
+    min-width: 31vmax;
+    padding: 1rem 2rem;
+}
+.about-us .about-service .description-wraper .description h1{
+    font-family: 'Metropolis-Bold';
+}
+
+.about-us .about-service .description-wraper .description p{
+    font-family: 'Metropolis-Light';
+    line-height: 1.7rem;
+    line-height: 2rem;
+    margin: 0px;
+}
+
+.about-us .about-service .description-wraper .description .comparison{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us .about-service .description-wraper .description .comparison div {
+    flex: 1 0 25vh;
+    font-family: 'Metropolis-Bold';
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.about-us .about-service .description-wraper .description .comparison div h2{
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.about-us .about-service .description-wraper .description .comparison div ul{
+    list-style: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 1450px) {
+    .omg{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 1130px){
+    .omg{
+        font-size: 1.6rem;
+    }
+}
+/* 990px and below */
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 874px) {
+    .about-us {
+        padding: 0 0 2rem 0;
+     }
+}
+
+@media screen and (max-width: 672px) {
+    .about-us .about-service .description-wraper .description p{
+        line-height: 1.3rem; 
+        white-space: normal;
+    }
+
+    .about-us .about-service .description-wraper .description .comparison div h2{
+        line-height: 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    .about-us .about-service .description-wraper .description .comparison div ul{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .about-us .about-service .title h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        word-wrap: break-word;
+    }
+
+    
+}
