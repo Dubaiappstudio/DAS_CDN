@@ -363,19 +363,19 @@ h1 {
     font-family: "Metropolis-Bold";
 }
 
-.we-cerate .header .title span {
+/* .we-cerate .header .title span {
     font-family: "Metropolis-light";
-}
+} */
 
-.we-cerate .header .title h2 {
+/* .we-cerate .header .title h2 {
     font-family: "Metropolis-light";
     font-size: 1rem;
     margin-top: -0.5rem;
     text-transform: uppercase;
     display: inline-block;
-}
+} */
 
-.we-cerate .header .title p {
+.we-cerate .header .title h2 {
     font-size: 7rem;
     min-width: 60vw;
     letter-spacing: 0.1em;
@@ -404,14 +404,8 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #000000;
     list-style: none;
     padding: 0;
-    text-align: center;
-    font-size: 3rem;
-    font-family: "Metropolis-black";
-    line-height: 1em;
-    text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
 }
 
 .we-cerate li a {
@@ -419,14 +413,29 @@ h1 {
     z-index: 4;
     cursor: pointer;
     display: flex;
+    justify-content: center;
     transition: color 0.5s ease-in-out;
     text-decoration: none;
     padding-top: 1em;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Metropolis-black";
+    line-height: 1em;
 }
 
-.we-cerate li:hover {
+.we-cerate li a:hover {
     color: #fff;
     text-shadow: 1px 1px #000, 1px -1px #000, -1px 1px #000, -1px -1px #000;
+}
+
+.we-cerate li p {
+    position: relative;
+    text-align: center;
+    font-family: "Metropolis-Light";
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    max-width: 60rem;
 }
 
 .process {
@@ -969,7 +978,7 @@ h1 {
         -webkit-text-fill-color: transparent;
     }
 
-    .we-cerate .header .title span {
+    /* .we-cerate .header .title span {
         background-image: linear-gradient(29deg, #2b47f0 24%, #dd4fe9 75%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -978,7 +987,7 @@ h1 {
         background-image: linear-gradient(29deg, #2b47f0 24%, #dd4fe9 75%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
+    } */
 }
 .footer-carousel-wrapper {
     width: 100%;

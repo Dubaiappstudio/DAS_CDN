@@ -99,10 +99,13 @@ section{
 
 .viewport-one .wraper{
     position: absolute;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index: 5;
     top: 50vh;
-    left: 46%;
+    left: 50%;
     width: 50%;
     transform: translate(-50%,-50%);
     overflow: hidden;
@@ -169,6 +172,53 @@ section{
     }
 }
 
+.viewport-one .wraper .hero-tagline {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Metropolis-Light';
+    font-size: 0.8rem !important;
+    line-height: 1.6;
+    max-width: 40rem;
+}
+
+.viewport-one .scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 1.5rem;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.viewport-one .scroll-down__button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: scroll-bounce 1.6s infinite;
+}
+
+.viewport-one .scroll-down__button span {
+    display: block;
+    font-size: 2.6rem;
+    line-height: 1;
+    transform: rotate(90deg);
+}
+
+@keyframes scroll-bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
 
 /* header content */
 .viewport-one .header-section {
