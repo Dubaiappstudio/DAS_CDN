@@ -106,7 +106,7 @@ section{
     z-index: 5;
     top: 50vh;
     left: 50%;
-    width: 50%;
+    width: 100%;
     transform: translate(-50%,-50%);
     overflow: hidden;
     transition: all 1s;
@@ -179,7 +179,6 @@ section{
     font-family: 'Metropolis-Light';
     font-size: 1.25rem !important;
     line-height: 1.6;
-    max-width: 40rem;
 }
 
 .viewport-one .scroll-down {
@@ -768,6 +767,10 @@ z-index:5;
     }
     .viewport-one .header-section svg {
         width: 100vw;
+    }
+    .viewport-one .wraper .hero-tagline {
+        width: 80%;
+        font-size: 1rem !important;
     }
 }
 
