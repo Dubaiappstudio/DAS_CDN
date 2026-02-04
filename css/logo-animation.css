@@ -102,6 +102,12 @@ body { background-color: #161617; }
     width: 50%;
 }
 
+.logo-nav-container {
+    display: flex;
+    font-size: 1rem;
+    position: relative;
+}
+
 .container.shadow {
     transform: perspective(12em) rotateX(193deg) translatey(-12px) translateZ(30px);
     position: relative;
