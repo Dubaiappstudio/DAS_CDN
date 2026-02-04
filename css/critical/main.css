@@ -436,6 +436,7 @@ h1 {
     line-height: 1.5rem;
     color: #ffffff;
     max-width: 60rem;
+    z-index: 2;
 }
 
 .process {
