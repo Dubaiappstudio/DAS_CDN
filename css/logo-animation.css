@@ -99,7 +99,7 @@ body { background-color: #161617; }
     display: flex;
     font-size: 1rem;
     position: relative;
-    width: 50%;
+    max-width: 760px; /* max width for desktop screen */
 }
 
 .logo-nav-container {
@@ -190,4 +190,10 @@ body { background-color: #161617; }
 
 .wraper.hidden {
     z-index: -1 !important;
+}
+
+@media screen and (max-width: 672px) {
+    .container {
+        width: 50%;
+    }
 }

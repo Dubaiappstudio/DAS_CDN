@@ -107,6 +107,7 @@ section{
     top: 50vh;
     left: 50%;
     width: 100%;
+    max-width: 925px; /* max width to fit h1 in one line */
     transform: translate(-50%,-50%);
     overflow: hidden;
     transition: all 1s;
@@ -769,7 +770,7 @@ z-index:5;
         width: 100vw;
     }
     .viewport-one .wraper .hero-tagline {
-        width: 80%;
+        width: 75%;
         font-size: 1rem !important;
     }
 }
