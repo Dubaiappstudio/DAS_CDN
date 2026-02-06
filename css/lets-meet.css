@@ -283,11 +283,15 @@
     position: relative;
     z-index: 2;
     display: block;
-    margin-block-start: 1em;
+    margin-block-start: 2em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+}
+
+.lets-meet-wrapper .lets-meet .contact-text .contact-title-span{
+    visibility: hidden;
 }
 
 .lets-meet-wrapper ,.lets-meet .contact-text > p{
@@ -424,6 +428,10 @@
     .lets-meet-wrapper .lets-meet .contact-form {
         flex: 1 0 45%;
         min-width: 35vh;
+    }
+
+    .lets-meet-wrapper .lets-meet .contact-text .contact-title-span{
+        display: none;
     }
 
 }
